@@ -74,7 +74,7 @@ body {
 .content{
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-evenly;
 }
 .text > h1{
   color: #fff;
@@ -104,7 +104,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .hero .contacts {
   background-color: rgba(54,57,66,.7);
-  padding: 35px 145px 45px;
+  padding: 35px  15px;
   width: 100%;
 }
 .rightContent{
@@ -151,4 +151,30 @@ img {
 .servicesBox>* {
   width: 48%;
   margin: 0 1% 1.5em;
+}
+.rightContent{
+  min-height:860px;
+  width:100%;
+  object-fit: cover;
+}
+.contacts{
+  overflow-wrap: anywhere;
+}
+@media only screen and (max-width: 400px){
+  .button, .submit {
+    display: inline-block;
+    line-height: 3.6666666667rem;
+    padding: 0 1rem;
+    font-size: 1.0666666667rem;
+    background: #037be8;
+    color: #fff;
+    font-family: "Barlow Condensed";
+    font-weight: 700;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    min-width: 240px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
 }
