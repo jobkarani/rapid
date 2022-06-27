@@ -4,13 +4,14 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  /* overflow-x: hidden !important; */
+
 }
 a{
     text-decoration: none;
     transition: all .4s ease;
 }
 body {
-  overflow-x: hidden;
   font-family: 'Barlow Condensed', sans-serif;
 }
 
@@ -104,7 +105,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .hero .contacts {
   background-color: rgba(54,57,66,.7);
-  padding: 35px  15px;
+  padding: 25px  15px;
   width: 100%;
 }
 .rightContent{
@@ -153,7 +154,7 @@ img {
   margin: 0 1% 1.5em;
 }
 .rightContent{
-  min-height:860px;
+  /* min-height:860px; */
   width:100%;
   object-fit: cover;
 }
@@ -161,20 +162,18 @@ img {
   overflow-wrap: anywhere;
 }
 @media only screen and (max-width: 400px){
-  .button, .submit {
-    display: inline-block;
-    line-height: 3.6666666667rem;
-    padding: 0 1rem;
-    font-size: 1.0666666667rem;
-    background: #037be8;
-    color: #fff;
-    font-family: "Barlow Condensed";
-    font-weight: 700;
-    text-align: center;
-    text-decoration: none;
-    cursor: pointer;
-    min-width: 240px;
-    text-transform: uppercase;
-    letter-spacing: 3px;
+  .button.transparent, .submit.transparent {
+    background-color: transparent;
+    border: 3px solid #037be8;
+    color: #037be8;
+    line-height: 1rem;
+    padding: 10px 15px;
+    min-width: 120px;
+
 }
+.button, .submit {
+    padding: 15px 30px;
+    min-width: 100px;
+}
+
 }
