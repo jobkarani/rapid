@@ -9,11 +9,15 @@ https://docs.djangoproject.com/en/3.2/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/3.2/ref/settings/
 """
+import csv
 import os
-import django_heroku
-import dj_database_url
-from decouple import config,Csv
+import cloudinary
+import cloudinary.uploader
+import cloudinary.api
 from pathlib import Path
+import django_heroku
+from decouple import config,Csv
+import dj_database_url
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -74,7 +78,11 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'project.wsgi.application'
 
-
+cloudinary.config(
+    cloud_name="dwrxuibpi",
+    api_key="226928141486514",
+    api_secret="bakCtUGpYbgoF9HFd3rmpUd6EHI"
+)
 
 MODE=config("MODE", default="dev")
 SECRET_KEY = config('SECRET_KEY')
