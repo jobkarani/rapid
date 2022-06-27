@@ -38,6 +38,10 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'bootstrap4',
+    'cloudinary',
+    'tinymce',
+    'crispy_forms',
     'app',
     'django.contrib.admin',
     'django.contrib.auth',

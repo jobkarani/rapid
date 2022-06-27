@@ -64,12 +64,12 @@
           </nav>
           <section class="blog__section section--padding">
             <div class="container">
-                <div class="section__heading text-center mb-50">
-                    <h2 class="section__heading--maintitle">From The Blog</h2>
+                <div class=" text-center mb-50">
+                    <h1 >Blog</h1>
                 </div>
-                <div class="blog__section--inner">
-                    <div class="row " style="display: flex;">
+                    <div class="row">
                         {% for post in posts %} 
+                        <div class="col-md-4">
                         <div class="card" style="margin-left: 2%; background-color:white;box-shadow: 5px 5px 5px 5px #e2dede; text-align: center;margin-top: 5%; ">
                             <div class="blog__items">
                                 <div class="card-image">
@@ -84,9 +84,9 @@
                                 </div>
                             </div>
                         </div>
+                    </div>
                         {% endfor %}
                     </div>
-                </div>
                 
             </div>
         </section>

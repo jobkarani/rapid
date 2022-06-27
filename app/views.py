@@ -37,7 +37,7 @@ def blogDetails(request,blogs_id):
         "form":form,
         "blog":blog,
     }
-    return render (request, 'blog-details.html', ctx)
+    return render (request, 'blogdetails.html', ctx)
 
 def blogDetails(request, blogs_id):
     posts = Blogs.objects.all()
@@ -55,7 +55,7 @@ def blogDetails(request, blogs_id):
         "form":form,
         "blog":blog,
     }
-    return render (request, 'blog-details.html', ctx)
+    return render (request, 'blogdetails.html', ctx)
 
 def comments(request, blogs_id):
   form = ReplyForm()
