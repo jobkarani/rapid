@@ -19,7 +19,7 @@ def blogs(request):
         "posts":posts,
         "form":form,
     }
-    return render (request, 'blog.html', ctx )
+    return render (request, 'blogs.html', ctx )
 
 def blogDetails(request,blogs_id):
     posts = Blogs.objects.all()
