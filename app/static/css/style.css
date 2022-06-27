@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300;400;500&family=Inter:wght@300;400;500&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+    transition: all .4s ease;
+}
+body {
+  overflow-x: hidden;
+  font-family: 'Barlow Condensed', sans-serif;
+}
+
+.navigation{
+    background: white;
+    padding: 5px 1rem;
+}
+.nav-cont{
+    margin-left: 10px;
+}
+.phoneHeader {
+  font-family: "Barlow Condensed";
+  font-weight: 700;
+  font-size: 17px;
+  margin-right: 20px;
+  margin-left: 35px;
+  text-transform: uppercase;
+}
+.button.transparent, .submit.transparent {
+    background-color: transparent;
+    border: 3px solid #037be8;
+    color: #037be8;
+    line-height: 2.6666666667rem;
+}
+.button, .submit {
+    display: inline-block;
+    line-height: 3.6666666667rem;
+    padding: 0 1.3333333333rem;
+    font-size: 1.0666666667rem;
+    background: #037be8;
+    color: #fff;
+    font-family: "Barlow Condensed";
+    font-weight: 700;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    min-width: 240px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+.nav-link{
+  font-size: 17px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: black;
+}
+.hero{
+
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+
+  min-height: 80vh;
+}
+.leftSection{
+  padding: 40px 50px;
+  background-color: #363942;
+
+}
+.content{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.text > h1{
+  color: #fff;
+  font-weight: 700;
+
+}
+.text > p{
+  color: #ebebeb;
+
+}
+p {
+  padding-bottom: 20px;
+  line-height: 1.5;
+  font-size: large;
+}
+
+h1 {
+  font-size: 51px;
+  font-family: "Barlow Condensed";
+  font-weight: 700 !important;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 400;
+  padding-bottom: 20px;
+  line-height: 1.2;
+}
+
+.hero .contacts {
+  background-color: rgba(54,57,66,.7);
+  padding: 35px 145px 45px;
+  width: 100%;
+}
+.rightContent{
+  align-items: flex-end;
+}
+.clients h1{
+  margin-top: 30px;
+  padding-top: 20px;
+  font-weight: 700;
+}
+.clients__logo{
+  display: inline;
+  margin-bottom: 30px;
+}
+/*.clients{
+   margin: 0 1rem; 
+}*/
+.materials{
+  margin: 1.5rem;
+}
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.services{
+   margin: 2rem 4rem;
+}
+.flex{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.servicesBox .service {
+  margin-top: .5rem;
+  min-height: 468px;
+  margin-bottom: 40px;
+  align-items: flex-end;
+  position: relative;
+  text-decoration: none;
+}
+.servicesBox>* {
+  width: 48%;
+  margin: 0 1% 1.5em;
+}
