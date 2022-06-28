@@ -5,6 +5,18 @@ from .models import *
 def index(request):
     return render(request, 'index.html')
 
+def about(request):
+    return render(request, 'about.html')
+
+def careers(request):
+    return render(request, 'careers.html')
+
+def contact(request):
+    return render(request, 'contact.html')
+
+def services(request):
+    return render(request, 'services.html')
+
 def blogs(request):
     posts = Blogs.objects.all()
     form = ReplyForm()
