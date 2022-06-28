@@ -36,6 +36,10 @@ body {
     color: #037be8;
     line-height: 2.6666666667rem;
 }
+.button.transparent.white {
+  border: 3px solid #fff;
+  color: #fff;
+}
 .button, .submit {
     display: inline-block;
     line-height: 3.6666666667rem;
@@ -133,14 +137,14 @@ img {
 }
 
 .services{
-   margin: 2rem 4rem;
+   margin: 2rem 5rem;
 }
 .flex{
   display: flex;
   align-items: center;
   justify-content: center;
 }
-
+/* 
 .servicesBox .service {
   margin-top: .5rem;
   min-height: 468px;
@@ -152,7 +156,7 @@ img {
 .servicesBox>* {
   width: 48%;
   margin: 0 1% 1.5em;
-}
+} */
 .rightContent{
   /* min-height:860px; */
   width:100%;
@@ -160,6 +164,11 @@ img {
 }
 .contacts{
   overflow-wrap: anywhere;
+}
+.serviceBox{
+  background: url(https://sp-ao.shortpixel.ai/client/q_lossless,ret_img/https://rapidaxis.com/wp-content/uploads/CNC-Maching-5-Axis-Front-Page-1920x1280.jpg) cover no-repeat !important;
+  margin-bottom: 1rem;
+  padding: 2rem 1rem;
 }
 @media only screen and (max-width: 400px){
   .button.transparent, .submit.transparent {
@@ -175,5 +184,66 @@ img {
     padding: 15px 30px;
     min-width: 100px;
 }
+.services{
+  margin: 1rem 0;
+}
 
+}
+
+/* SWIPER JS */
+
+.testimonials {
+  position: relative;
+  height: 100%;
+}
+
+.testimonials {
+  background-color: #363942;
+  font-size: 14px;
+  color: #fff;
+  margin: 2rem 0;
+  padding: 1rem;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+
+  text-align: center;
+  font-size: 18px;
+  background: #4f5260;
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  padding: 2rem 1rem;
+}
+.swiper-slide > .quote{
+  overflow-wrap: anywhere;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.swiper-wrapper{
+  margin-bottom: 2rem;
+}
+.swiper-pagination{
+  margin: 2rem;
 }
