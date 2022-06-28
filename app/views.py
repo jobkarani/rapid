@@ -17,6 +17,9 @@ def contact(request):
 def services(request):
     return render(request, 'services.html')
 
+def quote(request):
+    return render(request, 'quote.html')
+
 def blogs(request):
     posts = Blogs.objects.all()
     form = ReplyForm()
