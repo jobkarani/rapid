@@ -247,3 +247,189 @@ img {
 .swiper-pagination{
   margin: 2rem;
 }
+
+/* blogs */
+
+.blog__items:hover .blog__thumbnail--img {
+  -webkit-transform: scale(1.05);
+  transform: scale(1.05)
+}
+
+.blog__content--btn {
+  background: var(--white-color);
+  border: 1px solid var(--border-color);
+  color: var(--text-gray-color);
+  line-height: 3.3rem
+}
+
+@media only screen and (min-width:768px) {
+  .blog__content--btn {
+      line-height: 3.8rem
+  }
+}
+
+@media only screen and (min-width:992px) {
+  .blog__content--btn {
+      padding: 0 3rem;
+      line-height: 4.3rem
+  }
+}
+
+@media only screen and (min-width:1200px) {
+  .blog__content--btn {
+      padding: 0 3rem;
+      line-height: 4.2rem;
+      height: 4.4rem
+  }
+}
+
+.blog__content--btn:hover {
+  background: var(--secondary-color);
+  border-color: var(--secondary-color);
+  color: var(--white-color)
+}
+
+.blog__content--btn.style2 {
+  color: var(--white-color);
+  background: var(--black-color)!important;
+  border: 0
+}
+
+@media only screen and (min-width:992px) {
+  .blog__content--btn.style2 {
+      padding: 0 3rem;
+      height: 4.3rem;
+      line-height: 4.3rem
+  }
+}
+
+@media only screen and (min-width:1600px) {
+  .blog__content--btn.style2 {
+      padding: 0 4rem;
+      height: 4.8rem;
+      line-height: 4.8rem
+  }
+}
+
+.blog__content--btn.style2:hover {
+  background: var(--secondary-color)!important
+}
+
+/* end of blogs */
+
+/* start of about slider section */
+
+.hero__slider--activation .swiper-button-prev {
+  left: 1rem;
+}
+@media only screen and (min-width: 768px) {
+  .hero__slider--activation .swiper-button-prev {
+    left: 1rem;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .hero__slider--activation .swiper-button-prev {
+    left: 2rem;
+  }
+}
+.hero__slider--activation .swiper-button-next {
+  right: 1rem;
+}
+@media only screen and (min-width: 768px) {
+  .hero__slider--activation .swiper-button-next {
+    right: 1rem;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .hero__slider--activation .swiper-button-next {
+    right: 2rem;
+  }
+}
+.swiper-slide-active .slider__content > * {
+  -webkit-animation-name: fadeInUp;
+  animation-name: fadeInUp;
+  -webkit-animation-duration: 1.2s;
+  animation-duration: 1.2s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+.swiper-slide-active .slider__content--desc {
+  -webkit-animation-delay: 0.3s;
+  animation-delay: 0.3s;
+}
+.swiper-slide-active .slider__content--maintitle {
+  -webkit-animation-delay: 0.5s;
+  animation-delay: 0.5s;
+}
+.swiper-slide-active .slider__content--desc.desc2 {
+  -webkit-animation-delay: 0.7s;
+  animation-delay: 0.7s;
+}
+.swiper-slide-active .slider__btn {
+  -webkit-animation-delay: 0.8s;
+  animation-delay: 0.8s;
+}
+.hero__slider--items {
+  position: relative;
+}
+.hero__slider--items__inner {
+  padding: 6rem 0;
+}
+@media only screen and (min-width: 768px) {
+  .hero__slider--items__inner {
+    padding: 6rem 0;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .hero__slider--items__inner {
+    padding: 6.5rem 0;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .hero__slider--items__inner {
+    padding: 7rem 0;
+  }
+}
+@media only screen and (min-width: 1600px) {
+  .hero__slider--items__inner {
+    padding: 14.7rem 0;
+  }
+}
+.home1__slider--bg {
+  background: url(../img/slider/home1-slider1.png);
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center center;
+  background-size: cover;
+}
+@media only screen and (max-width: 767px) {
+  .home1__slider--bg {
+    background-position: 0;
+  }
+}
+.home1__slider--bg.two {
+  background: url(../img/slider/home1-slider2.png);
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center center;
+  background-size: cover;
+}
+@media only screen and (max-width: 767px) {
+  .home1__slider--bg.two {
+    background-position: 0;
+  }
+}
+.home1__slider--bg.three {
+  background: url(../img/slider/home1-slider3.png);
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center center;
+  background-size: cover;
+}
+@media only screen and (max-width: 767px) {
+  .home1__slider--bg.three {
+    background-position: 0;
+  }
+}
+
+/* end of about slider section  */

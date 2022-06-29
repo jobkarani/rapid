@@ -8,6 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- ======= All CSS Plugins here ======== -->
+    <link rel="stylesheet" href="{% static 'assets/css/plugins/swiper-bundle.min.css' %}">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <!-- Plugin css -->
 
@@ -61,12 +62,37 @@
             </div>
         </nav>
         <section class="blog__section section--padding">
-            
+            <!-- Start slider section -->
+        <section class="hero__slider--section">
+          <div class="hero__slider--inner hero__slider--activation swiper">
+              <div class="hero__slider--wrapper swiper-wrapper">
+                  <div class="swiper-slide " >
+                      <div class="hero__slider--items home1__slider--bg">
+                      </div>
+                  </div>
+                  <div class="swiper-slide ">
+                      <div class="hero__slider--items home1__slider--bg two">
+                      </div>
+                  </div>
+                  <div class="swiper-slide ">
+                      <div class="hero__slider--items home1__slider--bg three">
+                      </div>
+                  </div>
+              </div>
+              <div class="swiper__nav--btn swiper-button-next"></div>
+              <div class="swiper__nav--btn swiper-button-prev"></div>
+          </div>
+      </section>
+      <!-- End slider section -->
         </section>
         </main>
 
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-    
+        
+        <!-- js plugins -->
+        <script src="{% static 'assets/js/plugins/swiper-bundle.min.js' %}"></script>
+        <script src="{% static 'assets/js/plugins/glightbox.min.js' %}"></script>
+        
         <!-- Customscript js -->
         <script src="{% static 'assets/js/script.js' %}"></script>
     </body>
