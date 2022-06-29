@@ -396,7 +396,7 @@ img {
   }
 }
 .home1__slider--bg {
-  background: url(../img/slider/home1-slider1.png);
+  background: url("https://cdn.pixabay.com/photo/2010/12/05/space-walk-991__340.jpg");
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center center;
@@ -408,7 +408,7 @@ img {
   }
 }
 .home1__slider--bg.two {
-  background: url(../img/slider/home1-slider2.png);
+  background: url("https://cdn.pixabay.com/photo/2016/09/14/20/03/airplane-1670266__340.jpg");
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center center;
@@ -420,7 +420,7 @@ img {
   }
 }
 .home1__slider--bg.three {
-  background: url(../img/slider/home1-slider3.png);
+  background: url("https://cdn.pixabay.com/photo/2016/09/09/20/49/turbine-1658028__340.jpg");
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center center;
@@ -431,5 +431,71 @@ img {
     background-position: 0;
   }
 }
+.hero__slider--activation .swiper-button-prev {
+  left: 1rem;
+}
+@media only screen and (min-width: 768px) {
+  .hero__slider--activation .swiper-button-prev {
+    left: 1rem;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .hero__slider--activation .swiper-button-prev {
+    left: 2rem;
+  }
+}
+.hero__slider--activation .swiper-button-next {
+  right: 1rem;
+}
+@media only screen and (min-width: 768px) {
+  .hero__slider--activation .swiper-button-next {
+    right: 1rem;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .hero__slider--activation .swiper-button-next {
+    right: 2rem;
+  }
+}
 
-/* end of about slider section  */
+
+
+.swiper-pagination {
+  bottom: 0 !important;
+}
+.swiper-pagination-bullet {
+  width: 1.5rem;
+  height: 1.5rem;
+  border: 1px solid var(--secondary-color);
+  background: var(--white-color);
+  opacity: 1;
+  vertical-align: middle;
+  -webkit-transition: var(--transition);
+  transition: var(--transition);
+}
+.swiper-pagination-bullet.swiper-pagination-bullet-active {
+  background: var(--secondary-color);
+  width: 1.8rem;
+  height: 1.8rem;
+}
+.testimonial__pagination.style2 .swiper-pagination-bullet {
+  border: 1px solid var(--secondary-color);
+}
+.testimonial__pagination.style2
+  .swiper-pagination-bullet.swiper-pagination-bullet-active {
+  background: var(--secondary-color);
+}
+.quickview__gallery--pagination .swiper-pagination-bullet {
+  width: 16px;
+  height: 5px;
+  background: var(--secondary-color);
+  opacity: 1;
+  border-radius: 2px;
+  margin: 0 3px !important;
+}
+.quickview__gallery--pagination
+  .swiper-pagination-bullet.swiper-pagination-bullet-active {
+  background: var(--primary-color);
+}
+
+/* end of about slider */
