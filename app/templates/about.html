@@ -92,13 +92,6 @@
 
       <div id="demo" class="carousel slide" data-ride="carousel" style="width: 50%;">
 
-        <!-- Indicators -->
-        <ul class="carousel-indicators">
-          <li data-target="#demo" data-slide-to="0" class="active"></li>
-          <li data-target="#demo" data-slide-to="1"></li>
-          <li data-target="#demo" data-slide-to="2"></li>
-        </ul>
-      
         <!-- The slideshow -->
         <div class="carousel-inner">
           <div class="carousel-item active">
@@ -116,31 +109,28 @@
         <a class="carousel-control-prev carousel__btn" href="#demo" data-slide="prev">
           <span class="carousel-control-prev-icon"></span>
         </a>
-        <a class="carousel-control-next carousel__btn" href="#demo" data-slide="next">
+        <a class="carousel-control-next carousel__btn leftt" href="#demo" data-slide="next">
           <span class="carousel-control-next-icon"></span>
         </a>
-      
       </div>
       <!-- End slider section -->
     </div> 
-    <div class="career">
-      <div class="bg-color d-flex">
-        <div class="text" style="width:50%">
-          <h1 class="text-dark">Careers</h1>
-          <p class="text-dark">Rapid Axis is always looking for the best. If you’re a team player and passionate about manufacturing and client satisfaction; we want to hear from you.</p>
+        <div class="career ">
+          <div class="bg-color ">
+            <div class="break d-flex">
+            <div class="text" style="width:50%">
+              <h1 >Careers</h1>
+              <p class="pcareer" style="line-height: 1.5;">Rapid Axis is always looking for the best. If you’re a team player and passionate about manufacturing and client satisfaction; we want to hear from you.</p>
+            </div>
+            <div class="btn" style="width:50%;margin-top: 10%;">
+              <a class="pcareer" href="{% url 'careers' %}" style="border: 5px solid white;font-weight: 600;font-size: x-large; background-color: inherit;color: white;padding-left: 10%;padding-right: 10%;padding-top: 1%;padding-bottom: 1%;text-decoration: none;">Learn More</a>
+            </div>
+          </div>
+          </div>
         </div>
-        <div class="btn" style="width:50%">
-          <a class="btn btn-primary">Learn More</a>
-        </div>
-      </div>
-    </div>
         </section>
         </main>
-
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-        
-
-        
         <!-- Customscript js -->
         <script src="{% static 'js/script.js' %}"></script>
     </body>

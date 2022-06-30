@@ -437,15 +437,34 @@ img{
   position: relative;
 }
 .carousel__btn{
-  position: absolute;
-  top: 40;
-  bottom: 0;
+  background-image: none;
+  top: auto;
+  bottom: 23px;
+  width: 45px;
+  height: 45px;
   background: #037be8;
-  margin: 2rem;
-  height: 50px;
+  text-align: center;
+  line-height: 45px;
+}
+.leftt{
+  left: 50px;
 }
 .career{
-  background-image: url('');
+  margin-bottom: 20%;
+  background-image: url('https://sp-ao.shortpixel.ai/client/q_lossless,ret_img/https://rapidaxis.com/wp-content/uploads/Layer-5-1920x1079.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+.bg-color {
+    background-color: #037be9;
+    opacity: .7;
+}
+.text .pcareer, .btn .pcareer{
+  opacity: 2;
+}
+.break{
+  padding: 5%;
 }
 
 /* end of about */
