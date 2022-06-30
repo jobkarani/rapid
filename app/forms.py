@@ -17,3 +17,8 @@ class CommentForm(forms.ModelForm):
     class Meta:
         model = Comment
         fields = ['comment','name','email']
+
+class CareerForm(forms.ModelForm):
+    class Meta:
+        model = Careers
+        fields =['__all__']
