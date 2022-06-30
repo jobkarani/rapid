@@ -64,17 +64,14 @@ body {
   color: black;
 }
 .hero{
-
   background-size: cover;
   background-position: 50% 50%;
   background-repeat: no-repeat;
-
   min-height: 80vh;
 }
 .leftSection{
   padding: 40px 50px;
   background-color: #363942;
-
 }
 .content{
   display: flex;
@@ -84,11 +81,9 @@ body {
 .text > h1{
   color: #fff;
   font-weight: 700;
-
 }
 .text > p{
   color: #ebebeb;
-
 }
 p {
   padding-bottom: 20px;
@@ -107,7 +102,7 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 1.2;
 }
 
-.hero .contacts {
+.contacts {
   background-color: rgba(54,57,66,.7);
   padding: 25px  15px;
   width: 100%;
@@ -143,7 +138,7 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
-}
+} 
 
 
 /* 
@@ -429,6 +424,7 @@ img{
 
 
 /* about page */
+
 .post{
   padding: 20px;
 }
@@ -457,14 +453,28 @@ img{
 
 }
 .bg-color {
+  padding: 5%;
     background-color: #037be9;
     opacity: .7;
 }
 .text .pcareer, .btn .pcareer{
   opacity: 2;
 }
-.break{
-  padding: 5%;
+
+.aboutus{
+  height: fit-content;
 }
+.aboutus > .right{
+  height: auto;
+}
+.left {
+  color: aliceblue;
+  padding-left: 3%;
+  padding-right: 3%;
+  padding-top: 4%;
+  padding-bottom: 4%;
+  background-color: #424651;
+}
+
 
 /* end of about */

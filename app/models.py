@@ -32,3 +32,10 @@ class Comment(models.Model):
 
     def __str__(self):
         return self.comment
+
+class Careers(models.Model):
+    Department = models.CharField(max_length=100, blank=False)
+    role = models.DateTimeField(auto_now_add=True)
+
+    def __str__(self):
+        return self.role
