@@ -444,5 +444,8 @@ img{
   margin: 2rem;
   height: 50px;
 }
+.career{
+  background-image: url('');
+}
 
 /* end of about */
