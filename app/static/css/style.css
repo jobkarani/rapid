@@ -187,6 +187,9 @@ img {
 .services{
   margin: 1rem 0;
 }
+.post{
+  padding: auto;
+}
 
 }
 
@@ -202,7 +205,14 @@ img {
   font-size: 14px;
   color: #fff;
   margin: 2rem 0;
-  padding: 1rem;
+  padding: 6rem 3rem;
+}
+.testimonials h1{
+  margin-bottom: 2rem;
+}
+img{
+  width: 100%;
+  height: auto;
 }
 
 .swiper {
@@ -231,7 +241,7 @@ img {
   align-items: center;
   padding: 2rem 1rem;
 }
-.swiper-slide > .quote{
+.item .quote{
   overflow-wrap: anywhere;
 }
 
@@ -241,8 +251,33 @@ img {
   height: 100%;
   object-fit: cover;
 }
-.swiper-wrapper{
-  margin-bottom: 2rem;
+
+.blog__title span{
+  color: #037be8;
+}
+.info h3 a {
+  font-size: 30px;
+  font-weight: 700;
+  color: #000;
+  letter-spacing: -1px;
+}
+.info span {
+  color: #9099c5;
+  text-transform: uppercase;
+  display: inline-block;
+  padding-right: 12px;
+}
+.info p {
+  font-size: 18px;
+  line-height: 1.8;
+  padding-bottom: 20px;
+  overflow-wrap: anywhere;
+}
+.info .more {
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 12px;
+  letter-spacing: 1px;
 }
 .swiper-pagination{
   margin: 2rem;
@@ -500,3 +535,6 @@ img {
 
 
 /* end of about slider */
+.post{
+  padding: 20px;
+}
