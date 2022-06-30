@@ -613,3 +613,15 @@ img{
 .post{
   padding: 20px;
 }
+
+.carousel-inner{
+  position: relative;
+}
+.carousel__btn{
+  position: absolute;
+  top: 40;
+  bottom: 0;
+  background: #037be8;
+  margin: 2rem;
+  height: 50px;
+}
