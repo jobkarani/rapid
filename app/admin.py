@@ -4,3 +4,4 @@ from .models import *
 
 admin.site.register(Blogs)
 admin.site.register(Reply)
+admin.site.register(Careers)

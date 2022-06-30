@@ -21,4 +21,4 @@ class CommentForm(forms.ModelForm):
 class CareerForm(forms.ModelForm):
     class Meta:
         model = Careers
-        fields =['__all__']
+        fields =['department','role']

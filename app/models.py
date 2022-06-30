@@ -34,8 +34,8 @@ class Comment(models.Model):
         return self.comment
 
 class Careers(models.Model):
-    Department = models.CharField(max_length=100, blank=False)
-    role = models.DateTimeField(auto_now_add=True)
+    department = models.CharField(max_length=100, blank=False)
+    role = models.CharField(max_length=100,blank=True)
 
     def __str__(self):
         return self.role
