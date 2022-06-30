@@ -144,6 +144,8 @@ img {
   align-items: center;
   justify-content: center;
 }
+
+
 /* 
 .servicesBox .service {
   margin-top: .5rem;
@@ -165,10 +167,83 @@ img {
 .contacts{
   overflow-wrap: anywhere;
 }
-.serviceBox{
-  background: url(https://sp-ao.shortpixel.ai/client/q_lossless,ret_img/https://rapidaxis.com/wp-content/uploads/CNC-Maching-5-Axis-Front-Page-1920x1280.jpg) cover no-repeat !important;
+.service__subtitle{
+  color: #fff;
+}
+.serviceBox1{
+  background: url('https://sp-ao.shortpixel.ai/client/q_lossless,ret_img/https://rapidaxis.com/wp-content/uploads/CNC-Maching-5-Axis-Front-Page-1920x1280.jpg') ;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   margin-bottom: 1rem;
-  padding: 2rem 1rem;
+  min-height: 300px;  
+}
+.serviceBox2{
+  background: url('https://sp-ao.shortpixel.ai/client/q_lossless,ret_img/https://rapidaxis.com/wp-content/uploads/CNC-Maching-5-Axis-Front-Page-1920x1280.jpg') ;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 1rem;
+  margin-left: 3rem;
+  min-height: 300px;
+}
+.serviceBox3{
+  background: url('https://sp-ao.shortpixel.ai/client/q_lossless,ret_img/https://rapidaxis.com/wp-content/uploads/CNC-Maching-5-Axis-Front-Page-1920x1280.jpg') ;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 1rem;
+  min-height: 300px;
+}
+.serviceBox4{
+  background: url('https://sp-ao.shortpixel.ai/client/q_lossless,ret_img/https://rapidaxis.com/wp-content/uploads/CNC-Maching-5-Axis-Front-Page-1920x1280.jpg') ;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 1rem;
+  gap: 20px;
+  margin-left: 3rem;
+  min-height: 300px;
+}
+.services__text{
+  width: 100%;
+  height: 300px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px -200px 36px -28px inset;
+  padding: 1rem 3rem;
+  padding-top: 8rem;
+}
+.textOnImage{
+  background-image: url(https://sp-ao.shortpixel.ai/client/q_lossless,ret_img/https://rapidaxis.com/wp-content/uploads/Layer-231-1920x1280.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 75px 0 90px;
+  text-align: center;
+  position: relative;
+}
+.textOnImage:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(79,82,96,.9);
+}
+
+@media only screen and (max-width: 993px){
+  .serviceBox2{
+    padding: 1rem .5rem;
+    margin-left: 1rem;
+  }
+  .serviceBox4{
+    padding: 1rem .5rem;
+    margin-left: 1rem;
+  }
+  .services {
+    margin: 1rem 1rem;
+  }
+
 }
 @media only screen and (max-width: 400px){
   .button.transparent, .submit.transparent {
