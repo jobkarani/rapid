@@ -144,6 +144,8 @@ img {
   align-items: center;
   justify-content: center;
 }
+
+
 /* 
 .servicesBox .service {
   margin-top: .5rem;
@@ -165,10 +167,83 @@ img {
 .contacts{
   overflow-wrap: anywhere;
 }
-.serviceBox{
-  background: url(https://sp-ao.shortpixel.ai/client/q_lossless,ret_img/https://rapidaxis.com/wp-content/uploads/CNC-Maching-5-Axis-Front-Page-1920x1280.jpg) cover no-repeat !important;
+.service__subtitle{
+  color: #fff;
+}
+.serviceBox1{
+  background: url('https://sp-ao.shortpixel.ai/client/q_lossless,ret_img/https://rapidaxis.com/wp-content/uploads/CNC-Maching-5-Axis-Front-Page-1920x1280.jpg') ;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   margin-bottom: 1rem;
-  padding: 2rem 1rem;
+  min-height: 300px;  
+}
+.serviceBox2{
+  background: url('https://sp-ao.shortpixel.ai/client/q_lossless,ret_img/https://rapidaxis.com/wp-content/uploads/CNC-Maching-5-Axis-Front-Page-1920x1280.jpg') ;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 1rem;
+  margin-left: 3rem;
+  min-height: 300px;
+}
+.serviceBox3{
+  background: url('https://sp-ao.shortpixel.ai/client/q_lossless,ret_img/https://rapidaxis.com/wp-content/uploads/CNC-Maching-5-Axis-Front-Page-1920x1280.jpg') ;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 1rem;
+  min-height: 300px;
+}
+.serviceBox4{
+  background: url('https://sp-ao.shortpixel.ai/client/q_lossless,ret_img/https://rapidaxis.com/wp-content/uploads/CNC-Maching-5-Axis-Front-Page-1920x1280.jpg') ;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 1rem;
+  gap: 20px;
+  margin-left: 3rem;
+  min-height: 300px;
+}
+.services__text{
+  width: 100%;
+  height: 300px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px -200px 36px -28px inset;
+  padding: 1rem 3rem;
+  padding-top: 8rem;
+}
+.textOnImage{
+  background-image: url(https://sp-ao.shortpixel.ai/client/q_lossless,ret_img/https://rapidaxis.com/wp-content/uploads/Layer-231-1920x1280.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 75px 0 90px;
+  text-align: center;
+  position: relative;
+}
+.textOnImage:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(79,82,96,.9);
+}
+
+@media only screen and (max-width: 993px){
+  .serviceBox2{
+    padding: 1rem .5rem;
+    margin-left: 1rem;
+  }
+  .serviceBox4{
+    padding: 1rem .5rem;
+    margin-left: 1rem;
+  }
+  .services {
+    margin: 1rem 1rem;
+  }
+
 }
 @media only screen and (max-width: 400px){
   .button.transparent, .submit.transparent {
@@ -352,189 +427,22 @@ img{
 
 /* end of blogs */
 
-/* start of about slider section */
 
-.hero__slider--activation .swiper-button-prev {
-  left: 1rem;
-}
-@media only screen and (min-width: 768px) {
-  .hero__slider--activation .swiper-button-prev {
-    left: 1rem;
-  }
-}
-@media only screen and (min-width: 992px) {
-  .hero__slider--activation .swiper-button-prev {
-    left: 2rem;
-  }
-}
-.hero__slider--activation .swiper-button-next {
-  right: 1rem;
-}
-@media only screen and (min-width: 768px) {
-  .hero__slider--activation .swiper-button-next {
-    right: 1rem;
-  }
-}
-@media only screen and (min-width: 992px) {
-  .hero__slider--activation .swiper-button-next {
-    right: 2rem;
-  }
-}
-.swiper-slide-active .slider__content > * {
-  -webkit-animation-name: fadeInUp;
-  animation-name: fadeInUp;
-  -webkit-animation-duration: 1.2s;
-  animation-duration: 1.2s;
-  -webkit-animation-fill-mode: both;
-  animation-fill-mode: both;
-}
-.swiper-slide-active .slider__content--desc {
-  -webkit-animation-delay: 0.3s;
-  animation-delay: 0.3s;
-}
-.swiper-slide-active .slider__content--maintitle {
-  -webkit-animation-delay: 0.5s;
-  animation-delay: 0.5s;
-}
-.swiper-slide-active .slider__content--desc.desc2 {
-  -webkit-animation-delay: 0.7s;
-  animation-delay: 0.7s;
-}
-.swiper-slide-active .slider__btn {
-  -webkit-animation-delay: 0.8s;
-  animation-delay: 0.8s;
-}
-.hero__slider--items {
-  position: relative;
-}
-.hero__slider--items__inner {
-  padding: 6rem 0;
-}
-@media only screen and (min-width: 768px) {
-  .hero__slider--items__inner {
-    padding: 6rem 0;
-  }
-}
-@media only screen and (min-width: 992px) {
-  .hero__slider--items__inner {
-    padding: 6.5rem 0;
-  }
-}
-@media only screen and (min-width: 1200px) {
-  .hero__slider--items__inner {
-    padding: 7rem 0;
-  }
-}
-@media only screen and (min-width: 1600px) {
-  .hero__slider--items__inner {
-    padding: 14.7rem 0;
-  }
-}
-.home1__slider--bg {
-  background: url("");
-  background-repeat: no-repeat;
-  background-attachment: scroll;
-  background-position: center center;
-  background-size: cover;
-}
-@media only screen and (max-width: 767px) {
-  .home1__slider--bg {
-    background-position: 0;
-  }
-}
-.home1__slider--bg.two {
-  background: url("");
-  background-repeat: no-repeat;
-  background-attachment: scroll;
-  background-position: center center;
-  background-size: cover;
-}
-@media only screen and (max-width: 767px) {
-  .home1__slider--bg.two {
-    background-position: 0;
-  }
-}
-.home1__slider--bg.three {
-  background: url("");
-  background-repeat: no-repeat;
-  background-attachment: scroll;
-  background-position: center center;
-  background-size: cover;
-}
-@media only screen and (max-width: 767px) {
-  .home1__slider--bg.three {
-    background-position: 0;
-  }
-}
-.hero__slider--activation .swiper-button-prev {
-  left: 1rem;
-}
-@media only screen and (min-width: 768px) {
-  .hero__slider--activation .swiper-button-prev {
-    left: 1rem;
-  }
-}
-@media only screen and (min-width: 992px) {
-  .hero__slider--activation .swiper-button-prev {
-    left: 2rem;
-  }
-}
-.hero__slider--activation .swiper-button-next {
-  right: 1rem;
-}
-@media only screen and (min-width: 768px) {
-  .hero__slider--activation .swiper-button-next {
-    right: 1rem;
-  }
-}
-@media only screen and (min-width: 992px) {
-  .hero__slider--activation .swiper-button-next {
-    right: 2rem;
-  }
-}
-
-
-
-.swiper-pagination {
-  bottom: 0 !important;
-}
-.swiper-pagination-bullet {
-  width: 1.5rem;
-  height: 1.5rem;
-  border: 1px solid var(--secondary-color);
-  background: var(--white-color);
-  opacity: 1;
-  vertical-align: middle;
-  -webkit-transition: var(--transition);
-  transition: var(--transition);
-}
-.swiper-pagination-bullet.swiper-pagination-bullet-active {
-  background: var(--secondary-color);
-  width: 1.8rem;
-  height: 1.8rem;
-}
-.testimonial__pagination.style2 .swiper-pagination-bullet {
-  border: 1px solid var(--secondary-color);
-}
-.testimonial__pagination.style2
-  .swiper-pagination-bullet.swiper-pagination-bullet-active {
-  background: var(--secondary-color);
-}
-.quickview__gallery--pagination .swiper-pagination-bullet {
-  width: 16px;
-  height: 5px;
-  background: var(--secondary-color);
-  opacity: 1;
-  border-radius: 2px;
-  margin: 0 3px !important;
-}
-.quickview__gallery--pagination
-  .swiper-pagination-bullet.swiper-pagination-bullet-active {
-  background: var(--primary-color);
-}
-
-
-/* end of about slider */
+/* about page */
 .post{
   padding: 20px;
 }
+
+.carousel-inner{
+  position: relative;
+}
+.carousel__btn{
+  position: absolute;
+  top: 40;
+  bottom: 0;
+  background: #037be8;
+  margin: 2rem;
+  height: 50px;
+}
+
+/* end of about */
