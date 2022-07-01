@@ -126,10 +126,15 @@ body {
   [class*="col-"] {
     width: 100%;
   }
+  .lazyloaded {
+    margin: .5rem 4rem;
+    
+  }
 }
 .leftSection .text{
   margin-top: 3rem;
 }
+
 
 
 
@@ -183,6 +188,15 @@ h1, h2, h3, h4, h5, h6 {
 /*.clients{
    margin: 0 1rem; 
 }*/
+.column1 {
+  /* float: right;
+  width: 20%;
+  padding: 10px;
+  margin-top: 50px;
+  margin-bottom: -50px; */
+  text-align: center;
+
+}
 .materials{
   margin: 1.5rem;
 }
@@ -353,6 +367,10 @@ footer .row{
   }
   .leftSection .text{
     margin-top: 3rem;
+  }
+  .lazyloaded {
+    margin: .5rem 4rem;
+    
   }
   
 
@@ -548,6 +566,41 @@ img{
 
 /* about page */
 
+
+.about__career:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #037be8;
+  opacity: .7;
+}
+.about__career{
+  position: relative;
+  margin-bottom: 20%;
+  background-image: url('https://sp-ao.shortpixel.ai/client/q_lossless,ret_img/https://rapidaxis.com/wp-content/uploads/Layer-5-1920x1079.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 4rem 1rem;
+}
+.about__career > .container{
+  position: relative;
+}
+.abt__title{
+  color: #fff;
+  font-weight: 700;
+  padding-bottom: 15px;
+  font-size: 30px;
+}
+.pcareer{
+  font-size: 25px;
+}
+.about__btn{
+  margin-top: 5rem;
+}
+
 .post{
   padding: 20px;
 }
@@ -568,21 +621,9 @@ img{
 .leftt{
   left: 50px;
 }
-.career{
-  margin-bottom: 20%;
-  background-image: url('https://sp-ao.shortpixel.ai/client/q_lossless,ret_img/https://rapidaxis.com/wp-content/uploads/Layer-5-1920x1079.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
 
-}
-.bg-color {
-  padding: 5%;
-    background-color: #037be9;
-    opacity: .7;
-}
-.text .pcareer, .btn .pcareer{
-  opacity: 2;
-}
+
+
 
 .aboutus{
   height: fit-content;
