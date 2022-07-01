@@ -37,6 +37,16 @@ def careers(request):
     }
     return render(request, 'careers.html',ctx)
 
+def careerDetails(request,careers_id):
+    posts = Careers.objects.all()
+    career = Careers.objects.filter(pk = careers_id)
+    print(posts)
+    ctx= {
+        "posts":posts,
+        "career":career,
+    }
+    return render (request, 'careersdetails.html', ctx)
+
 def contact(request):
     return render(request, 'contact.html')
 
