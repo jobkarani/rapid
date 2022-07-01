@@ -40,7 +40,6 @@ def careers(request):
 def careerDetails(request,careers_id):
     posts = Careers.objects.all()
     career = Careers.objects.filter(pk = careers_id)
-   
     print(posts)
     ctx= {
         "posts":posts,

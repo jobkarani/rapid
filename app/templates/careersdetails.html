@@ -1,5 +1,5 @@
 {% load static %}
-
+{% load bootstrap4 %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -59,47 +59,38 @@
                 <a href="{% url 'quote' %}" class="button transparent">GET A QUOTE</a>
               </div>
             </div>
-        </nav>
-        <section class="blog__section section--padding">
-          <div class="container-full aboutus d-flex">
-            <div class="left" style="width: 35%;">
-              <h1>Careers</h1>
-              <p>Rapid Axis is always looking for the best! If you’re passionate about manufacturing and client satisfaction you may be exactly what we are looking for. With an ongoing educational program and excellent benefits Rapid Axis can take your career to the next level. Rapid Axis is an equal opportunity employer and proud to hire our veterans and retired military.</p>
+           </nav>
+           <!-- Start blog details section -->
+        <section class=" section--padding">
+            <div class="container-fluid" style="text-align: center;">
+                <div class="row">
+                    <div class="">
+                        <div class="blog__details--wrapper">
+                            {% for career in career %}
+                            <div class="entry__blog card mt-5 mb-3" style="width: 100%;border: none;  margin-left:2%;">
+                                <div class="blog__post--header mb-30">
+                                    <h2 class="post__header--title mb-15" style="text-align: center;">Role: {{career.role | upper}}</h2>
+                                    <h2 class="blog__post--meta">Department: {{ career.department }}</h2>
+                                </div>
+                                <div class="card-text mt-3 mb-3 pt-5" style="width: auto; padding-bottom:5%; padding-left: 10%; padding-right: 10%; box-shadow: 5px 5px 5px 5px #e2dede;" >
+                                    <h2>Job Description</h2>
+                                    <p > {{ career.description }}</p>
+                                </div>
+                                <div class="card-text mt-3 mb-3 pt-5" style="width: auto; padding-bottom:5%; padding-left: 10%; padding-right: 10%;  box-shadow: 5px 5px 5px 5px #e2dede;" >
+                                  <h2>Requirements</h2>
+                                  <p> {{ career.requirements }}</p>
+                                </div>
+                                <div class="card-btn">
+                                  <a class="btn btn-primary " style="padding-left: 15%; padding-right:15%;font-size: x-large;" href="mailto:PM@rapidaxis.com">Send CV</a>
+                                </div>
+                            </div>
+                            {% endfor %}
+                        </div>
+                    </div>
+                </div>
             </div>
-            <!-- Start carousel section -->
-            <div class="carousel right " style="width: 65%;">
-              <img src="https://sp-ao.shortpixel.ai/client/q_lossless,ret_img/https://rapidaxis.com/wp-content/uploads/Layer-14.jpg" alt="">
-              
-            </div>
-            <!-- End carousel section -->
-          </div>
-
-          <div class="container mt-5 mb-5">
-              <div class="mb-50">
-                  <h1 >We are currently hiring for:</h1>
-              </div>
-              <div class="blog__section--inner">
-                  <div class="row">
-                      {% for post in posts %} 
-                      <div class="col-md-4" >
-                      <div class="card" style="margin-left: 2%; background-color: #ebebeb; box-shadow: 5px 5px 5px 5px #e2dede; text-align: center;margin-top: 5%; ">
-                          <div class="blog__items">
-                              <div class="card-body">
-                                
-                                <h3 class="card-text">{{ post.role | upper }}</h3> 
-                                <h3 class="card-title">
-                                  <a href="">{{ post.department }}</a>
-                                </h3>
-                                <a class="btn btn-primary " style="padding-left: 15%; padding-right:15%;font-size: x-large;" href="{% url 'careerDetails' careers_id=post.id %}">Apply Now</a>
-                              </div>
-                          </div>
-                      </div>
-                  </div>
-                      {% endfor %}
-                  </div>
-              </div>
-          </div>
-      </section>
+        </section>
+        <!-- End blog details section -->
         </main>
 
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
