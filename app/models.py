@@ -36,6 +36,8 @@ class Comment(models.Model):
 class Careers(models.Model):
     department = models.CharField(max_length=100, blank=False)
     role = models.CharField(max_length=100,blank=True)
+    description = models.CharField(max_length=1000,blank=True)
+    requirements = models.CharField(max_length=1000,blank=True)
 
     def __str__(self):
         return self.role

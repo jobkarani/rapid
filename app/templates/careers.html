@@ -62,21 +62,22 @@
         </nav>
         <section class="blog__section section--padding">
           <div class="container">
-              <div class=" text-center mb-50">
+              <div class="  mb-50">
                   <h1 >We are currently hiring for:</h1>
               </div>
               <div class="blog__section--inner">
                   <div class="row">
                       {% for post in posts %} 
-                      <div class="col-md-4">
-                      <div class="card" style="margin-left: 2%; background-color:white; box-shadow: 5px 5px 5px 5px #e2dede; text-align: center;margin-top: 5%; ">
+                      <div class="col-md-4" >
+                      <div class="card" style="margin-left: 2%; background-color: #ebebeb; box-shadow: 5px 5px 5px 5px #e2dede; text-align: center;margin-top: 5%; ">
                           <div class="blog__items">
                               <div class="card-body">
+                                
+                                <h3 class="card-text">{{ post.role | upper }}</h3> 
                                 <h3 class="card-title">
                                   <a href="">{{ post.department }}</a>
                                 </h3>
-                                <h3 class="card-text">{{ post.role }}</h3> <br>
-                                <a class="blog__content--btn primary__btn " href="">Apply Now  </a>
+                                <a class="btn btn-primary " style="padding-left: 15%; padding-right:15%;font-size: x-large;" href="mailto:PM@rapidaxis.com">Apply Now</a>
                               </div>
                           </div>
                       </div>
