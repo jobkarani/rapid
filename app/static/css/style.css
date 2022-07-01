@@ -213,13 +213,14 @@ img {
   padding-top: 8rem;
 }
 .textOnImage{
+  position: relative;
   background-image: url(https://sp-ao.shortpixel.ai/client/q_lossless,ret_img/https://rapidaxis.com/wp-content/uploads/Layer-231-1920x1280.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 75px 0 90px;
+  padding: 75px 0 80px;
   text-align: center;
-  position: relative;
+  margin-bottom: 4rem;
 }
 .textOnImage:before {
   content: '';
@@ -230,6 +231,57 @@ img {
   bottom: 0;
   background: rgba(79,82,96,.9);
 }
+.textOnImage > .container{
+  position: relative;
+}
+.textOnImage h2 {
+  color: #fff;
+  font-size: 45px;
+  padding-bottom: 45px;
+  line-height: 1.2;
+  font-weight: 700;
+}
+
+
+footer {
+  border-top: 1px solid #d3d5d9;
+  margin-bottom: 2rem !important;
+}
+/* .footer__flex{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+} */
+.service__links li{
+  display: block;
+  list-style: none;
+
+}
+
+.footer__title{
+  text-align: center;
+  font-weight: 700;
+  font-size: 17px;
+  color: #000;
+  text-transform: uppercase;
+  padding-bottom: 30px;
+  letter-spacing: 1.5px;
+}
+
+footer li a {
+  font-size: 15px;
+  color: #6a6a6a;
+}
+.SOCIAL{
+  margin-top: 1rem;
+}
+.icons a{
+  margin: 0px 5px;
+}
+footer .row{
+  text-align: center;
+}
+
 
 @media only screen and (max-width: 993px){
   .serviceBox2{
@@ -382,6 +434,9 @@ img{
   .blog__content--btn {
       padding: 0 3rem;
       line-height: 4.3rem
+  }
+  .footer__grp{
+    text-align: center;
   }
 }
 
