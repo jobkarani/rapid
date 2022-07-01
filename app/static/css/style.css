@@ -64,15 +64,81 @@ body {
   color: black;
 }
 .hero{
-  background-size: cover;
-  background-position: 50% 50%;
-  background-repeat: no-repeat;
+  /* Grid styles */
+  display: grid;
+  align-items: center;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
   min-height: 80vh;
 }
 .leftSection{
   padding: 40px 50px;
   background-color: #363942;
 }
+
+.leftSection .text{
+  margin-top: 10rem;
+}
+
+
+.row::after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+[class*="col-"] {
+  float: left;
+ 
+  
+}
+
+
+.menu li:hover {
+  background-color: #0099cc;
+}
+
+.aside {
+  background-color: #33b5e5;
+  padding: 15px;
+  color: #ffffff;
+  text-align: center;
+  font-size: 14px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+
+/* For desktop: */
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+@media only screen and (max-width: 1137px) {
+  /* For mobile phones: */
+  [class*="col-"] {
+    width: 100%;
+  }
+  .lazyloaded {
+    margin: .5rem 4rem;
+    
+  }
+}
+.leftSection .text{
+  margin-top: 3rem;
+}
+
+
+
+
+
 .content{
   display: flex;
   align-items: center;
@@ -122,6 +188,15 @@ h1, h2, h3, h4, h5, h6 {
 /*.clients{
    margin: 0 1rem; 
 }*/
+.column1 {
+  /* float: right;
+  width: 20%;
+  padding: 10px;
+  margin-top: 50px;
+  margin-bottom: -50px; */
+  text-align: center;
+
+}
 .materials{
   margin: 1.5rem;
 }
@@ -290,6 +365,14 @@ footer .row{
   .services {
     margin: 1rem 1rem;
   }
+  .leftSection .text{
+    margin-top: 3rem;
+  }
+  .lazyloaded {
+    margin: .5rem 4rem;
+    
+  }
+  
 
 }
 @media only screen and (max-width: 400px){
@@ -301,6 +384,9 @@ footer .row{
     padding: 10px 15px;
     min-width: 120px;
 
+}
+.leftSection .text{
+  margin-top: 3rem;
 }
 .button, .submit {
     padding: 15px 30px;
@@ -480,6 +566,41 @@ img{
 
 /* about page */
 
+
+.about__career:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #037be8;
+  opacity: .7;
+}
+.about__career{
+  position: relative;
+  margin-bottom: 20%;
+  background-image: url('https://sp-ao.shortpixel.ai/client/q_lossless,ret_img/https://rapidaxis.com/wp-content/uploads/Layer-5-1920x1079.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 4rem 1rem;
+}
+.about__career > .container{
+  position: relative;
+}
+.abt__title{
+  color: #fff;
+  font-weight: 700;
+  padding-bottom: 15px;
+  font-size: 30px;
+}
+.pcareer{
+  font-size: 25px;
+}
+.about__btn{
+  margin-top: 5rem;
+}
+
 .post{
   padding: 20px;
 }
@@ -500,21 +621,9 @@ img{
 .leftt{
   left: 50px;
 }
-.career{
-  margin-bottom: 20%;
-  background-image: url('https://sp-ao.shortpixel.ai/client/q_lossless,ret_img/https://rapidaxis.com/wp-content/uploads/Layer-5-1920x1079.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
 
-}
-.bg-color {
-  padding: 5%;
-    background-color: #037be9;
-    opacity: .7;
-}
-.text .pcareer, .btn .pcareer{
-  opacity: 2;
-}
+
+
 
 .aboutus{
   height: fit-content;
