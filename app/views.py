@@ -1,5 +1,5 @@
 from django.shortcuts import render,redirect
-from app.forms import CommentForm,ReplyForm
+from app.forms import CareerForm, CommentForm,ReplyForm
 from .models import *
 # Create your views here.
 def index(request):
@@ -22,7 +22,20 @@ def about(request):
     return render(request, 'about.html')
 
 def careers(request):
-    return render(request, 'careers.html')
+    posts = Careers.objects.all()
+    form = CareerForm()
+    if request.method == 'POST':  
+        form = CareerForm(request.POST, request.FILES)
+        if form.is_valid():
+            comment = form.save(commit=False)
+            comment.save()
+            return redirect('careers')
+    print(posts)
+    ctx= {
+        "posts":posts,
+        "form":form,
+    }
+    return render(request, 'careers.html',ctx)
 
 def contact(request):
     return render(request, 'contact.html')

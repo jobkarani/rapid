@@ -2,146 +2,137 @@
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- ======= All CSS Plugins here ======== -->
-    <!-- Plugin css -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>    
-    <!-- Custom Style CSS -->
-    <link rel="stylesheet" href="{% static 'css/style.css' %}">
-    <!-- <link rel="stylesheet" href="{% static 'assets/css/main.css' %}"> -->
+  <!-- Plugin css -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Custom Style CSS -->
+  <link rel="stylesheet" href="{% static 'css/style.css' %}">
 
-    <title>Start Aerospace</title>
+  <title>Start Aerospace</title>
 </head>
+
 <body>
-  <style>
-    .left{
-      color: aliceblue;
-      padding: 3%;
-      background-color:#424651;;
-    }
-    @media only screen and (min-width:768px) {
-      .aboutus {
-          display: none;
-      }
-    }
-
-  .carousel-inner img {
-    width: 100%;
-  }
-  </style>
-    <main class="container-full">
-        <nav class="navbar navbar-expand-lg navbar-light navigation">
-            <div class="container-fluid">
-              <a class="navbar-brand" href="{% url 'index' %}">
-                <img width="152" height="73" src="https://sp-ao.shortpixel.ai/client/q_lossless,ret_img,w_152/https://rapidaxis.com/wp-content/uploads/Logo.png" data-src="https://sp-ao.shortpixel.ai/client/q_lossless,ret_img,w_152/https://rapidaxis.com/wp-content/uploads/Logo.png" class="custom-logo lazyloaded" alt="Start Aerospace" data-srcset="https://sp-ao.shortpixel.ai/client/q_lossless,ret_img,w_152/https://rapidaxis.com/wp-content/uploads/Logo.png 152w, https://sp-ao.shortpixel.ai/client/q_lossless,ret_img,w_150/https://rapidaxis.com/wp-content/uploads/Logo-150x73.png 150w" data-sizes="(max-width: 152px) 100vw, 152px" sizes="(max-width: 152px) 100vw, 152px" srcset="https://sp-ao.shortpixel.ai/client/q_lossless,ret_img,w_152/https://rapidaxis.com/wp-content/uploads/Logo.png 152w, https://sp-ao.shortpixel.ai/client/q_lossless,ret_img,w_150/https://rapidaxis.com/wp-content/uploads/Logo-150x73.png 150w">
+  <main class="container-full">
+    <nav class="navbar navbar-expand-lg navbar-light navigation">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="{% url 'index' %}">
+          <img width="152" height="73"
+            src="https://sp-ao.shortpixel.ai/client/q_lossless,ret_img,w_152/https://rapidaxis.com/wp-content/uploads/Logo.png"
+            data-src="https://sp-ao.shortpixel.ai/client/q_lossless,ret_img,w_152/https://rapidaxis.com/wp-content/uploads/Logo.png"
+            class="custom-logo lazyloaded" alt="Start Aerospace"
+            data-srcset="https://sp-ao.shortpixel.ai/client/q_lossless,ret_img,w_152/https://rapidaxis.com/wp-content/uploads/Logo.png 152w, https://sp-ao.shortpixel.ai/client/q_lossless,ret_img,w_150/https://rapidaxis.com/wp-content/uploads/Logo-150x73.png 150w"
+            data-sizes="(max-width: 152px) 100vw, 152px" sizes="(max-width: 152px) 100vw, 152px"
+            srcset="https://sp-ao.shortpixel.ai/client/q_lossless,ret_img,w_152/https://rapidaxis.com/wp-content/uploads/Logo.png 152w, https://sp-ao.shortpixel.ai/client/q_lossless,ret_img,w_150/https://rapidaxis.com/wp-content/uploads/Logo-150x73.png 150w">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="{% url 'services' %}" id="navbarDropdownMenuLink" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                SERVICES
               </a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
-                <ul class="navbar-nav">
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="{% url 'services' %}" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                          SERVICES
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                          <li><a class="dropdown-item" href="{% url 'about' %}">ABOUT US</a></li>
-                          <li><a class="dropdown-item" href="{% url 'careers' %}">CAREERS</a></li>
-                          <li><a class="dropdown-item" href="{% url 'blogs' %}">BLOG</a></li>
-                          <li><a class="dropdown-item" href="{% url 'contact' %}">CONTACT US</a></li>
-                        </ul>
-                      </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="{% url 'about' %}">ABOUT US</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="{% url 'careers' %}">CAREERS</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="{% url 'blogs' %}">BLOG</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="{% url 'contact' %}">CONTACT US</a>
-                  </li>
-                </ul>
-              </div>
-              <div class="d-flex nav-cont">
-                <a href="#" class="phoneHeader">CALL:(650)587-1500</a>
-                <a href="{% url 'quote' %}" class="button transparent">GET A QUOTE</a>
-              </div>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <li><a class="dropdown-item" href="{% url 'about' %}">ABOUT US</a></li>
+                <li><a class="dropdown-item" href="{% url 'careers' %}">CAREERS</a></li>
+                <li><a class="dropdown-item" href="{% url 'blogs' %}">BLOG</a></li>
+                <li><a class="dropdown-item" href="{% url 'contact' %}">CONTACT US</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{% url 'about' %}">ABOUT US</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{% url 'careers' %}">CAREERS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{% url 'blogs' %}">BLOG</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{% url 'contact' %}">CONTACT US</a>
+            </li>
+          </ul>
+        </div>
+        <div class="d-flex nav-cont">
+          <a href="#" class="phoneHeader">CALL:(650)587-1500</a>
+          <a href="{% url 'quote' %}" class="button transparent">GET A QUOTE</a>
+        </div>
+      </div>
+    </nav>
+
+    
+      <div class="container-full aboutus d-flex">
+        <div class="left" style="width: 50%;">
+          <h1>About Us</h1>
+          <p>Rapid Axis is a family owned and run business that is dedicated to developing long term relationships in
+            the Mechanical Engineering and Custom Component Buying community throughout the by providing quality rapid
+            manufacturing and prototyping services at a low cost. Our leadership is formed by two generations of
+            Machinists. <br>
+          We believe that through a combination of in-house capabilities and carefully selected partners we can
+            provide quick prototyping and production services without sacrificing either cost or quality. This has been
+            proven by our excellent track record of satisfied customers and a recognized industry wide low returned
+            materials rate.</p>
+          Our Headquarters are currently located at: 639 Bair Island Road</br>
+          Suite 512 Redwood City, CA 94063</br>
+          For general questions email: Sales@rapidaxis.com</p>
+        </div>
+        <!-- Start carousel section -->
+        <div id="demo" class="carousel right slide" data-ride="carousel" style="width: 50%;">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="https://cdn.pixabay.com/photo/2015/03/19/07/40/aerospace-680509__340.jpg" style="min-height: 90vh;"
+                alt="Los Angeles">
             </div>
-        </nav>
-        <section class="blog__section section--padding">
-        <div class="aboutus d-flex">
-          <div class="left" style="width: 50%;">
-            <h1>About Us</h1>
-            <p>Rapid Axis is a family owned and run business that is dedicated to developing long term relationships in the Mechanical Engineering and Custom Component Buying community throughout the by providing quality rapid manufacturing and prototyping services at a low cost. Our leadership is formed by two generations of Machinists.</p>
-            <p>We believe that through a combination of in-house capabilities and carefully selected partners we can provide quick prototyping and production services without sacrificing either cost or quality. This has been proven by our excellent track record of satisfied customers and a recognized industry wide low returned materials rate.</p>
-            <p>Our Headquarters are currently located at: 639 Bair Island Road</p>
-            <p>Suite 512 Redwood City, CA 94063</p>
-            <p>For general questions email: Sales@rapidaxis.com</p>
+            <div class="carousel-item">
+              <img src="https://cdn.pixabay.com/photo/2016/09/14/20/03/airplane-1670266__340.jpg" style="min-height: 90vh;"
+                 alt="Chicago">
+            </div>
+            <div class="carousel-item">
+              <img src="https://cdn.pixabay.com/photo/2010/12/05/space-walk-991__340.jpg" style="min-height: 90vh;"
+                alt="New York">
+            </div>
           </div>
-            <!-- Start slider section -->
-
-      <div id="demo" class="carousel slide" data-ride="carousel" style="width: 50%;">
-
-        <!-- Indicators -->
-        <ul class="carousel-indicators">
-          <li data-target="#demo" data-slide-to="0" class="active"></li>
-          <li data-target="#demo" data-slide-to="1"></li>
-          <li data-target="#demo" data-slide-to="2"></li>
-        </ul>
-      
-        <!-- The slideshow -->
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="https://cdn.pixabay.com/photo/2016/05/13/13/13/sky-1389923__340.jpg" style="min-height:100vh;" alt="Los Angeles">
-          </div>
-          <div class="carousel-item">
-            <img src="https://cdn.pixabay.com/photo/2016/09/14/20/03/airplane-1670266__340.jpg" style="min-height:100vh;" alt="Chicago">
-          </div>
-          <div class="carousel-item">
-            <img src="https://cdn.pixabay.com/photo/2010/12/05/space-walk-991__340.jpg" style="min-height:100vh;" alt="New York">
-          </div>
+          <!-- Left and right controls -->
+          <a class="carousel-control-prev carousel__btn" href="#demo" data-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+          </a>
+          <a class="carousel-control-next carousel__btn leftt" href="#demo" data-slide="next">
+            <span class="carousel-control-next-icon"></span>
+          </a>
         </div>
-      
-        <!-- Left and right controls -->
-        <a class="carousel-control-prev carousel__btn" href="#demo" data-slide="prev">
-          <span class="carousel-control-prev-icon"></span>
-        </a>
-        <a class="carousel-control-next carousel__btn" href="#demo" data-slide="next">
-          <span class="carousel-control-next-icon"></span>
-        </a>
-      
+        <!-- End carousel section -->
       </div>
-      <!-- End slider section -->
-    </div> 
-    <div class="career">
-      <div class="bg-color d-flex">
-        <div class="text" style="width:50%">
-          <h1 class="text-dark">Careers</h1>
-          <p class="text-dark">Rapid Axis is always looking for the best. If you’re a team player and passionate about manufacturing and client satisfaction; we want to hear from you.</p>
-        </div>
-        <div class="btn" style="width:50%">
-          <a class="btn btn-primary">Learn More</a>
-        </div>
+      <div class="career">
+        <div class="bg-color d-flex">
+            <div class="text" style="width:50%">
+              <h1>Careers</h1>
+              <p class="pcareer" style="line-height: 1.5;">Rapid Axis is always looking for the best. If you’re a team
+                player and passionate about manufacturing and client satisfaction; we want to hear from you.</p>
+            </div>
+            <div class="btn" style="width:50%;margin-top: 10%;">
+              <a class="pcareer" href="{% url 'careers' %}"
+                style="border: 5px solid white;font-weight: 600;font-size: x-large; background-color: inherit;color: white;padding-left: 10%;padding-right: 10%;padding-top: 1%;padding-bottom: 1%;text-decoration: none;">Learn
+                More</a>
+            </div>
+          </div>
       </div>
-    </div>
-        </section>
-        </main>
+  </main>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+  </script>
+  <!-- Customscript js -->
+  <script src="{% static 'js/script.js' %}"></script>
+</body>
 
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-        
-
-        
-        <!-- Customscript js -->
-        <script src="{% static 'js/script.js' %}"></script>
-    </body>
-    </html>
+</html>
