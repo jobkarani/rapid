@@ -128,7 +128,9 @@ body {
   }
   .lazyloaded {
     margin: .5rem 4rem;
-    
+  }
+  .aboutp{
+    padding: 0 2rem;
   }
 }
 .leftSection .text{
