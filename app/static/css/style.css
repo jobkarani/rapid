@@ -132,6 +132,9 @@ body {
   .aboutp{
     padding: 0 2rem;
   }
+  .xxx{
+    height: 60%;
+  }
 }
 .leftSection .text{
   margin-top: 3rem;
