@@ -2,427 +2,374 @@
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- ======= All CSS Plugins here ======== -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <!-- Plugin css -->
-    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <!-- Custom Style CSS -->
-    <link rel="stylesheet" href="{% static 'css/style.css' %}">
-    <!-- <link rel="stylesheet" href="{% static 'assets/css/main.css' %}"> -->
+  <!-- ======= All CSS Plugins here ======== -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <!-- Plugin css -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- Custom Style CSS -->
+  <link rel="stylesheet" href="{% static 'css/style.css' %}">
+  <!-- <link rel="stylesheet" href="{% static 'assets/css/main.css' %}"> -->
 
-    <title>Start Aerospace</title>
+  <title>Start Aerospace</title>
 </head>
+
 <body>
-    <main class="container-full">
-      <nav class="navbar navbar-expand-lg navbar-light navigation">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="{% url 'index' %}">
-            <img width="152" height="73" src="https://sp-ao.shortpixel.ai/client/q_lossless,ret_img,w_152/https://rapidaxis.com/wp-content/uploads/Logo.png" data-src="https://sp-ao.shortpixel.ai/client/q_lossless,ret_img,w_152/https://rapidaxis.com/wp-content/uploads/Logo.png" class="custom-logo lazyloaded" alt="Start Aerospace" data-srcset="https://sp-ao.shortpixel.ai/client/q_lossless,ret_img,w_152/https://rapidaxis.com/wp-content/uploads/Logo.png 152w, https://sp-ao.shortpixel.ai/client/q_lossless,ret_img,w_150/https://rapidaxis.com/wp-content/uploads/Logo-150x73.png 150w" data-sizes="(max-width: 152px) 100vw, 152px" sizes="(max-width: 152px) 100vw, 152px" srcset="https://sp-ao.shortpixel.ai/client/q_lossless,ret_img,w_152/https://rapidaxis.com/wp-content/uploads/Logo.png 152w, https://sp-ao.shortpixel.ai/client/q_lossless,ret_img,w_150/https://rapidaxis.com/wp-content/uploads/Logo-150x73.png 150w">
-          </a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
-            <ul class="navbar-nav">
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="{% url 'services' %}" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      SERVICES
-                    </a>
-                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                      <li><a class="dropdown-item" href="{% url 'about' %}">ABOUT US</a></li>
-                      <li><a class="dropdown-item" href="{% url 'careers' %}">CAREERS</a></li>
-                      <li><a class="dropdown-item" href="{% url 'blogs' %}">BLOG</a></li>
-                      <li><a class="dropdown-item" href="{% url 'contact' %}">CONTACT US</a></li>
-                    </ul>
-                  </li>
-              <li class="nav-item">
-                <a class="nav-link" href="{% url 'about' %}">ABOUT US</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="{% url 'careers' %}">CAREERS</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="{% url 'blogs' %}">BLOG</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="{% url 'contact' %}">CONTACT US</a>
-              </li>
-            </ul>
-          </div>
-          <div class="d-flex nav-cont">
-            <a href="#" class="phoneHeader">CALL:(650)587-1500</a>
-            <a href="{% url 'quote' %}" class="button transparent">GET A QUOTE</a>
-          </div>
-        </div>
-      </nav>
-
-
-          <!-- <div class="container-full d-flex hero">
-              <div class=" leftSection content pol-4 col-4">
-                <div class="text">
-                  <h1>Start Aerospace Provides 
-                    competitvely priced, 
-                    quality parts;quickly.
-                  </h1>
-                  <p>
-                    It is our mission to develop long lasting relationships with Engineers and Buyers by providing top notch custom parts and service to match. Whether your project is a quickly needed small quantity prototype job or your annual production run; Start Aerospace can help.
-                  </p>
-                </div>
-              </div>
-              <div class="pol-8 col-8">
-                <div class="rightContent " >
-                  <img src="https://sp-ao.shortpixel.ai/client/q_lossless,ret_img/https://rapidaxis.com/wp-content/uploads/Layer-24.jpg" alt="">
-                  <div class="contacts ">
-                    <h3>Need immediate assistance?</h3>
-                    <div class="items content"> 
-                      <div class="item">
-                        <div class="title" style="color: white;">Email:</div>
-                        <div class="contact">
-                          <p><a href="mailto:Sales@Start Aerospace.com">Sales@Start Aerospace.com</a></p></div>
-                        </div>
-                        <div class="item">
-                          <div class="title" style="color: white;">Call:</div>
-                          <div class="contact"><p><a href="tel:(650) 587-1500">(650) 587-1500</a></p></div>
-                          </div>
-                        </div>
-                    </div>
-                </div>
-              </div> -->
-
-
-              <div class="row">
-                <div class="col-4 menu leftSection">
-                  <div class="text">
-                  <h1>Start Aerospace Provides 
-                    competitvely priced, 
-                    quality parts;quickly.
-                  </h1>
-                  <p>
-                    It is our mission to develop long lasting relationships with Engineers and Buyers by providing top notch custom parts and service to match. Whether your project is a quickly needed small quantity prototype job or your annual production run; Start Aerospace can help.
-                  </p>
-                </div>
-                </div>
-              
-              
-                <div class="col-8 right">
-                  <div class="rightContent " >
-                    <img src="https://sp-ao.shortpixel.ai/client/q_lossless,ret_img/https://rapidaxis.com/wp-content/uploads/Layer-24.jpg" alt="">
-                    <div class="contacts ">
-                      <h3>Need immediate assistance?</h3>
-                      <div class="items content"> 
-                        <div class="item">
-                          <div class="title" style="color: white;">Email:</div>
-                          <div class="contact">
-                            <p><a href="mailto:Sales@Start Aerospace.com">Sales@Start Aerospace.com</a></p></div>
-                          </div>
-                          <div class="item">
-                            <div class="title" style="color: white;">Call:</div>
-                            <div class="contact"><p><a href="tel:(650) 587-1500">(650) 587-1500</a></p></div>
-                            </div>
-                          </div>
-                      </div>
-                  </div>
-                </div>
-              </div>
-
-          </div> 
-          <!-- <div class="container">
-            <div class=" text-center clients">
-              <h1>Our Clients</h1>
-              <div class="row clients__logo flex">
-                <div class="materials col-lg-3 col-md-4">
-                  <img class=" ls-is-cached lazyloaded" src="https://sp-ao.shortpixel.ai/client/q_lossless,ret_img/https://rapidaxis.com/wp-content/uploads/appliedmatsnew.png" data-src="https://sp-ao.shortpixel.ai/client/q_lossless,ret_img/https://rapidaxis.com/wp-content/uploads/appliedmatsnew.png" alt="" style="width:60%">
-                </div>
-                <div class="materials col-lg-2 col-md-4">
-                  <img class=" ls-is-cached lazyloaded" src="https://sp-ao.shortpixel.ai/client/q_lossless,ret_img/https://rapidaxis.com/wp-content/uploads/Collins_Aerospace_6053px.png" data-src="https://sp-ao.shortpixel.ai/client/q_lossless,ret_img/https://rapidaxis.com/wp-content/uploads/Collins_Aerospace_6053px.png" alt="" style="width:60%">
-                  </div>
-                <div class="materials col-lg-2 col-md-4">
-                  <img class=" ls-is-cached lazyloaded" src="https://sp-ao.shortpixel.ai/client/q_lossless,ret_img/https://rapidaxis.com/wp-content/uploads/rivian-featured12.png" data-src="https://sp-ao.shortpixel.ai/client/q_lossless,ret_img/https://rapidaxis.com/wp-content/uploads/rivian-featured12.png" alt="" style="width:60%">
-                </div>
-                <div class="materials col-lg-2 col-md-4">
-                  <img class=" ls-is-cached lazyloaded" src="https://sp-ao.shortpixel.ai/client/q_lossless,ret_img/https://rapidaxis.com/wp-content/uploads/google2new.png" data-src="https://sp-ao.shortpixel.ai/client/q_lossless,ret_img/https://rapidaxis.com/wp-content/uploads/google2new.png" alt="" style="width:60%">
-                </div>
-                <div class="materials col-lg-3 col-md-4">
-                  <img class=" ls-is-cached lazyloaded" src="https://sp-ao.shortpixel.ai/client/q_lossless,ret_img/https://rapidaxis.com/wp-content/uploads/parker2.png" data-src="https://sp-ao.shortpixel.ai/client/q_lossless,ret_img/https://rapidaxis.com/wp-content/uploads/parker2.png" alt="" style="width:60%">
-                </div>
-              </div>
-            </div>
-            
-          </div> -->
-
-
-          <div class="container-fluid mb-5">
-            <div class="row">
-              <h1 class="text-center">
-                Our Clients
-              </h1>
-              <div class="colum1 col-lg-3 col-md-6">
-                <img class=" ls-is-cached lazyloaded" src="https://sp-ao.shortpixel.ai/client/q_lossless,ret_img/https://rapidaxis.com/wp-content/uploads/appliedmatsnew.png" data-src="https://sp-ao.shortpixel.ai/client/q_lossless,ret_img/https://rapidaxis.com/wp-content/uploads/appliedmatsnew.png" alt="" style="width:60%">
-              </div>
-              <div class="colum1 col-lg-2 col-md-6">
-                <img class=" ls-is-cached lazyloaded" src="https://sp-ao.shortpixel.ai/client/q_lossless,ret_img/https://rapidaxis.com/wp-content/uploads/Collins_Aerospace_6053px.png" data-src="https://sp-ao.shortpixel.ai/client/q_lossless,ret_img/https://rapidaxis.com/wp-content/uploads/Collins_Aerospace_6053px.png" alt="" style="width:60%">
-              </div>
-              <div class="colum1 col-lg-2 col-md-6">
-                <img class=" ls-is-cached lazyloaded" src="https://sp-ao.shortpixel.ai/client/q_lossless,ret_img/https://rapidaxis.com/wp-content/uploads/rivian-featured12.png" data-src="https://sp-ao.shortpixel.ai/client/q_lossless,ret_img/https://rapidaxis.com/wp-content/uploads/rivian-featured12.png" alt="" style="width:60%">
-              </div>
-              <div class="colum1 col-lg-2 col-md-6">
-                <img class=" ls-is-cached lazyloaded" src="https://sp-ao.shortpixel.ai/client/q_lossless,ret_img/https://rapidaxis.com/wp-content/uploads/google2new.png" data-src="https://sp-ao.shortpixel.ai/client/q_lossless,ret_img/https://rapidaxis.com/wp-content/uploads/google2new.png" alt="" style="width:60%">
-              </div>
-              <div class="colum1 col-lg-3 col-md-6">
-                <img class=" ls-is-cached lazyloaded" src="https://sp-ao.shortpixel.ai/client/q_lossless,ret_img/https://rapidaxis.com/wp-content/uploads/parker2.png" data-src="https://sp-ao.shortpixel.ai/client/q_lossless,ret_img/https://rapidaxis.com/wp-content/uploads/parker2.png" alt="" style="width:60%">
-              </div>
-            </div>
-          </div>
-
-
-          <div class="container-fluid">
-            <div class="services">
-              <h1 class=" text-center">Our Services</h1>
-              <p class=" text-center">Start Aerospace is happy to support your manufacturing needs whether it be for prototyping or production. With full capabilities in 3, 4 and 5 Axis CNC Machining, Sheet Metal, DMLS, Injection Molding, Urethane Casting and 3D Printing; we can support most organization’s full production development and production manufacturing needs. We strive for client satisfaction and aim to provide competitively priced, quality parts; quickly.</p>
-              <div class="row services__flex">
-                <div class="col-lg-6 col-md-6 col-sm-12 serviceBox1">
-                  <div class="services__text">
-                    <h2 class="service__subtitle">TYPING 3D PRINTING</h2>
-                    <a href="#" class="button transparent white">order now</a>
-                  </div>
-                </div>
-                <div class="col-lg-5 col-md-5 col-sm-12 serviceBox2">
-                  <div class="services__text">
-                    <h2 class="service__subtitle">TYPING 3D PRINTING</h2>
-                    <a href="#" class="button transparent white">order now</a>
-                  </div>
-                </div>
-                <div class="col-lg-6 col-md-6 col-sm-12 serviceBox3">
-                  <div class="services__text">
-                    <h2 class="service__subtitle">TYPING 3D PRINTING</h2>
-                    <a href="#" class="button transparent white">order now</a>
-                  </div>
-                </div>
-                <div class="col-lg-5 col-md-5 col-sm-12 serviceBox4">
-                  <div class="services__text">
-                    <h2 class="service__subtitle">TYPING 3D PRINTING</h2>
-                    <a href="#" class="button transparent white">order now</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="testimonials text-center">
-            <h1>Testimonials</h1>
-            <!-- Swiper -->
-            <div class="swiper mySwiper">
-              <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                  <div class="item">
-                    <h3>Name</h3>
-                    <h4>Occupation</h4>
-                    <div class="quote">
-                      <p>dindjcksnjksnjkdcsjkdsjksbdchjckdbshjbhjkbhsjkhsjkdhjsbhjshdjscbhjdsbhdcjshbcjhbcdjsdbhjdshj</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="item">
-                    <h3>Name</h3>
-                    <h4>Occupation</h4>
-                    <div class="quote">
-                      <p>dindjcksnjksnjkdcsjkdsjksbdchjckdbshjbhjkbhsjkhsjkdhjsbhjshdjscbhjdsbhdcjshbcjhbcdjsdbhjdshj</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="item">
-                    <h3>Name</h3>
-                    <h4>Occupation</h4>
-                    <div class="quote">
-                      <p>dindjcksnjksnjkdcsjkdsjksbdchjckdbshjbhjkbhsjkhsjkdhjsbhjshdjscbhjdsbhdcjshbcjhbcdjsdbhjdshj</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="item">
-                    <h3>Name</h3>
-                    <h4>Occupation</h4>
-                    <div class="quote">
-                      <p>dindjcksnjksnjkdcsjkdsjksbdchjckdbshjbhjkbhsjkhsjkdhjsbhjshdjscbhjdsbhdcjshbcjhbcdjsdbhjdshj</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="item">
-                    <h3>Name</h3>
-                    <h4>Occupation</h4>
-                    <div class="quote">
-                      <p>dindjcksnjksnjkdcsjkdsjksbdchjckdbshjbhjkbhsjkhsjkdhjsbhjshdjscbhjdsbhdcjshbcjhbcdjsdbhjdshj</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="item">
-                    <h3>Name</h3>
-                    <h4>Occupation</h4>
-                    <div class="quote">
-                      <p>dindjcksnjksnjkdcsjkdsjksbdchjckdbshjbhjkbhsjkhsjkdhjsbhjshdjscbhjdsbhdcjshbcjhbcdjsdbhjdshj</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="item">
-                    <h3>Name</h3>
-                    <h4>Occupation</h4>
-                    <div class="quote">
-                      <p>dindjcksnjksnjkdcsjkdsjksbdchjckdbshjbhjkbhsjkhsjkdhjsbhjshdjscbhjdsbhdcjshbcjhbcdjsdbhjdshj</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="item">
-                    <h3>Name</h3>
-                    <h4>Occupation</h4>
-                    <div class="quote">
-                      <p>dindjcksnjksnjkdcsjkdsjksbdchjckdbshjbhjkbhsjkhsjkdhjsbhjshdjscbhjdsbhdcjshbcjhbcdjsdbhjdshj</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="item">
-                    <h3>Name</h3>
-                    <h4>Occupation</h4>
-                    <div class="quote">
-                      <p>dindjcksnjksnjkdcsjkdsjksbdchjckdbshjbhjkbhsjkhsjkdhjsbhjshdjscbhjdsbhdcjshbcjhbcdjsdbhjdshj</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-pagination"></div>
-            </div>
-          </div>
-          <div class="container-fluid blogs">
-            <h1 class="text-center blog__title">Rapid Axis <span>Blog</span></h1>
-            <div class="row">
-              {% for post in posts %}
-              <div class="col-lg-4 col-md-6 col-sm-12 post">
-                <img src="{{ post.image.url }}" alt="">
-                <div class="info">
-                  <h3><a href="">{{ post.heading }}</a></h3>
-                  <div class="author__time">
-                    <span>BY ADMIN</span>
-                    <span>|</span>
-                    <span>
-                      <time> {{ post.created_at }}</time>
-                    </span> <br>
-                    <a class="blog__content--btn primary__btn btn-outline-primary" href="{% url 'blogDetails' blogs_id=post.id %}">Read more </a>
-                  </div>
-                </div>
-              </div>
-              {% endfor %}
-            </div>
-          </div>
-          <div class="textOnImage">
-            <div class="container">
-              <div class="text">
-                <h2>Have files ready to quote? Submit an RFQ now.</h2>
-                <a href="#" class="button">Let’s Get This Done</a>
-              </div>
-            </div>
-          </div>
-    </main>
-    <!-- <footer class="container-full">
-      <div class="container-fluid text-left">
-        <div class="footer__flex row">
-          <div class="services col-lg-3 col-md-4 col-sm-12">
-            <a href="" class="title">SERVICES</a>
-            <ul class="services__links">
-              <li><a class="footer__links" style="margin: 10px 0;" href="">CNC</a></li>
-              <li><a class="footer__links" href="">Sheet Metal</a></li>
-              <li><a class="footer__links" href="">Injection Molding</a></li>
-              <li><a class="footer__links" href="">Urethane Casting</a></li>
-            </ul>
-          </div>
-          <div class="content col-lg-3 col-md-4 col-sm-12" >
-            <a href="" class="title">CONTENT</a>
-            <ul class="content__links">
-              <li><a href="" class="footer__links">About Us</a></li>
-              <li><a href="" class="footer__links">Careers</a></li>
-              <li><a href="" class="footer__links">Contact Us</a></li>
-              <li><a href="" class="footer__links">Terms and Conditions</a></li>
-            </ul>
-          </div>
-
-          <div class="assistance col-lg-3 col-md-4 col-sm-12">
-            <a href="" class="title">NEED IMMEDIATE ASSISTANCE?</a>
-            <div class="email">
-              <p>EMAIL</p>
-              <a href="">Sales@RapidAxis.com</a>
-            </div>
-            <div class="call">
-              <p>CALL</p>
-              <a href="">(123)456789</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </footer> -->
-    <footer class="container-full">
+  <main class="container-full">
+    <nav class="navbar navbar-expand-lg navbar-light navigation">
       <div class="container-fluid">
-        <div class="row ">
-          <div class="col-lg-3 col-md-4 col-sm-12 footer__grp">
-            <a href="" class="footer__title text-center">SERVICES</a>
-            <ul class="services">
-              <li><a href="" class="footer__links ">mine</a></li>
-              <li><a href="" class="footer__links">mine</a></li>
-              <li><a href="" class="footer__links">mine</a></li>
-              <li><a href="" class="footer__links">mine</a></li>
-            </ul>
-          </div>
-          <div class="col-lg-3 col-md-4 col-sm-12 footer__grp">
-            <a href="" class="footer__title text-center">CONTENT</a>
-            <ul class="services">
-              <li><a href="" class="footer__links">About Us</a></li>
-              <li><a href="" class="footer__links">Careers</a></li>
-              <li><a href="" class="footer__links">Contact Us</a></li>
-              <li><a href="" class="footer__links">Terms and Conditions</a></li>
-            </ul>
-          </div>
-          <div class="col-lg-3 col-md-4 col-sm-12 footer__grp">
-            <a href="" class="footer__title text-center">CONTENT</a>
-            <ul class="services">
-              <li><a href="" class="footer__links">moore</a></li>
-              <li><a href="" class="footer__links">moore</a></li>
-              <li><a href="" class="footer__links">moore</a></li>
-              <li><a href="" class="footer__links">moore</a></li>
-            
-            </ul>
-          </div>
-          <div class="col-lg-3 col-md-4 col-sm-12 footer__grp">
-            <a href="" class="footer__title text-center">CONTACT</a>
-            <ul class="services">
-              <li><a href="" class="footer__links">yooh</a></li>
-              <li><a href="" class="footer__links">yooh</a></li>
-              <div class="SOCIAL">
-                <a href="" class="footer__title">FOLLOW US</a>
-                <div class="icons">
-                  <a class="fab fa-facebook-f col" target="_blank" href="https://www.facebook.com/Rapid-Axis-594355157735531/" rel="nofollow"></a>
-                  <a class="fab fa-linkedin-in col" target="_blank" href="https://www.linkedin.com/company/rapid-axis/" rel="nofollow"></a>
-                  <a class="fab fa-instagram col" target="_blank" href="https://www.instagram.com/" rel="nofollow"></a>
+        <a class="navbar-brand" href="{% url 'index' %}">
+          <img width="152" height="73"
+            src="https://sp-ao.shortpixel.ai/client/q_lossless,ret_img,w_152/https://rapidaxis.com/wp-content/uploads/Logo.png"
+            data-src="https://sp-ao.shortpixel.ai/client/q_lossless,ret_img,w_152/https://rapidaxis.com/wp-content/uploads/Logo.png"
+            class="custom-logo lazyloaded" alt="Start Aerospace"
+            data-srcset="https://sp-ao.shortpixel.ai/client/q_lossless,ret_img,w_152/https://rapidaxis.com/wp-content/uploads/Logo.png 152w, https://sp-ao.shortpixel.ai/client/q_lossless,ret_img,w_150/https://rapidaxis.com/wp-content/uploads/Logo-150x73.png 150w"
+            data-sizes="(max-width: 152px) 100vw, 152px" sizes="(max-width: 152px) 100vw, 152px"
+            srcset="https://sp-ao.shortpixel.ai/client/q_lossless,ret_img,w_152/https://rapidaxis.com/wp-content/uploads/Logo.png 152w, https://sp-ao.shortpixel.ai/client/q_lossless,ret_img,w_150/https://rapidaxis.com/wp-content/uploads/Logo-150x73.png 150w">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="{% url 'services' %}" id="navbarDropdownMenuLink" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                SERVICES
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <li><a class="dropdown-item" href="{% url 'about' %}">ABOUT US</a></li>
+                <li><a class="dropdown-item" href="{% url 'careers' %}">CAREERS</a></li>
+                <li><a class="dropdown-item" href="{% url 'blogs' %}">BLOG</a></li>
+                <li><a class="dropdown-item" href="{% url 'contact' %}">CONTACT US</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{% url 'about' %}">ABOUT US</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{% url 'careers' %}">CAREERS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{% url 'blogs' %}">BLOG</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{% url 'contact' %}">CONTACT US</a>
+            </li>
+          </ul>
+        </div>
+        <div class="d-flex nav-cont">
+          <a href="#" class="phoneHeader">CALL:(650)587-1500</a>
+          <a href="{% url 'quote' %}" class="button transparent">GET A QUOTE</a>
+        </div>
+      </div>
+    </nav>
+    <div class="row">
+      <div class="col-4 menu leftSection">
+        <div class="text">
+          <h1>Start Aerospace Provides
+            competitvely priced,
+            quality parts;quickly.
+          </h1>
+          <p>
+            It is our mission to develop long lasting relationships with Engineers and Buyers by providing top notch
+            custom parts and service to match. Whether your project is a quickly needed small quantity prototype job or
+            your annual production run; Start Aerospace can help.
+          </p>
+        </div>
+      </div>
+      <div class="col-8 right">
+        <div class="rightContent ">
+          <img
+            src="https://sp-ao.shortpixel.ai/client/q_lossless,ret_img/https://rapidaxis.com/wp-content/uploads/Layer-24.jpg"
+            alt="">
+          <div class="contacts ">
+            <h3>Need immediate assistance?</h3>
+            <div class="items content">
+              <div class="item">
+                <div class="title" style="color: white;">Email:</div>
+                <div class="contact">
+                  <p><a href="mailto:Sales@Start Aerospace.com">Sales@Start Aerospace.com</a></p>
                 </div>
               </div>
-            </ul>
+              <div class="item">
+                <div class="title" style="color: white;">Call:</div>
+                <div class="contact">
+                  <p><a href="tel:(650) 587-1500">(650) 587-1500</a></p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-    </footer>
+    </div>
+    </div>
+    <div class="container-fluid mb-5">
+      <div class="row">
+        <h1 class="text-center">
+          Our Clients
+        </h1>
+        <div class="colum1 col-lg-3 col-md-6">
+          <img class=" ls-is-cached lazyloaded"
+            src="https://sp-ao.shortpixel.ai/client/q_lossless,ret_img/https://rapidaxis.com/wp-content/uploads/appliedmatsnew.png"
+            data-src="https://sp-ao.shortpixel.ai/client/q_lossless,ret_img/https://rapidaxis.com/wp-content/uploads/appliedmatsnew.png"
+            alt="" style="width:60%">
+        </div>
+        <div class="colum1 col-lg-2 col-md-6">
+          <img class=" ls-is-cached lazyloaded"
+            src="https://sp-ao.shortpixel.ai/client/q_lossless,ret_img/https://rapidaxis.com/wp-content/uploads/Collins_Aerospace_6053px.png"
+            data-src="https://sp-ao.shortpixel.ai/client/q_lossless,ret_img/https://rapidaxis.com/wp-content/uploads/Collins_Aerospace_6053px.png"
+            alt="" style="width:60%">
+        </div>
+        <div class="colum1 col-lg-2 col-md-6">
+          <img class=" ls-is-cached lazyloaded"
+            src="https://sp-ao.shortpixel.ai/client/q_lossless,ret_img/https://rapidaxis.com/wp-content/uploads/rivian-featured12.png"
+            data-src="https://sp-ao.shortpixel.ai/client/q_lossless,ret_img/https://rapidaxis.com/wp-content/uploads/rivian-featured12.png"
+            alt="" style="width:60%">
+        </div>
+        <div class="colum1 col-lg-2 col-md-6">
+          <img class=" ls-is-cached lazyloaded"
+            src="https://sp-ao.shortpixel.ai/client/q_lossless,ret_img/https://rapidaxis.com/wp-content/uploads/google2new.png"
+            data-src="https://sp-ao.shortpixel.ai/client/q_lossless,ret_img/https://rapidaxis.com/wp-content/uploads/google2new.png"
+            alt="" style="width:60%">
+        </div>
+        <div class="colum1 col-lg-3 col-md-6">
+          <img class=" ls-is-cached lazyloaded"
+            src="https://sp-ao.shortpixel.ai/client/q_lossless,ret_img/https://rapidaxis.com/wp-content/uploads/parker2.png"
+            data-src="https://sp-ao.shortpixel.ai/client/q_lossless,ret_img/https://rapidaxis.com/wp-content/uploads/parker2.png"
+            alt="" style="width:60%">
+        </div>
+      </div>
+    </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
 
-    <!-- Customscript js -->
-    <script src="{% static 'js/script.js' %}"></script>
+    <div class="container-fluid">
+      <div class="services">
+        <h1 class=" text-center">Our Services</h1>
+        <p class=" text-center">Start Aerospace is happy to support your manufacturing needs whether it be for
+          prototyping or production. With full capabilities in 3, 4 and 5 Axis CNC Machining, Sheet Metal, DMLS,
+          Injection Molding, Urethane Casting and 3D Printing; we can support most organization’s full production
+          development and production manufacturing needs. We strive for client satisfaction and aim to provide
+          competitively priced, quality parts; quickly.</p>
+        <div class="row services__flex">
+          <div class="col-lg-6 col-md-6 col-sm-12 serviceBox1">
+            <div class="services__text">
+              <h2 class="service__subtitle">TYPING 3D PRINTING</h2>
+              <a href="#" class="button transparent white">order now</a>
+            </div>
+          </div>
+          <div class="col-lg-5 col-md-5 col-sm-12 serviceBox2">
+            <div class="services__text">
+              <h2 class="service__subtitle">TYPING 3D PRINTING</h2>
+              <a href="#" class="button transparent white">order now</a>
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-6 col-sm-12 serviceBox3">
+            <div class="services__text">
+              <h2 class="service__subtitle">TYPING 3D PRINTING</h2>
+              <a href="#" class="button transparent white">order now</a>
+            </div>
+          </div>
+          <div class="col-lg-5 col-md-5 col-sm-12 serviceBox4">
+            <div class="services__text">
+              <h2 class="service__subtitle">TYPING 3D PRINTING</h2>
+              <a href="#" class="button transparent white">order now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="testimonials text-center">
+      <h1>Testimonials</h1>
+      <!-- Swiper -->
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="item">
+              <h3>Name</h3>
+              <h4>Occupation</h4>
+              <div class="quote">
+                <p>dindjcksnjksnjkdcsjkdsjksbdchjckdbshjbhjkbhsjkhsjkdhjsbhjshdjscbhjdsbhdcjshbcjhbcdjsdbhjdshj</p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="item">
+              <h3>Name</h3>
+              <h4>Occupation</h4>
+              <div class="quote">
+                <p>dindjcksnjksnjkdcsjkdsjksbdchjckdbshjbhjkbhsjkhsjkdhjsbhjshdjscbhjdsbhdcjshbcjhbcdjsdbhjdshj</p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="item">
+              <h3>Name</h3>
+              <h4>Occupation</h4>
+              <div class="quote">
+                <p>dindjcksnjksnjkdcsjkdsjksbdchjckdbshjbhjkbhsjkhsjkdhjsbhjshdjscbhjdsbhdcjshbcjhbcdjsdbhjdshj</p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="item">
+              <h3>Name</h3>
+              <h4>Occupation</h4>
+              <div class="quote">
+                <p>dindjcksnjksnjkdcsjkdsjksbdchjckdbshjbhjkbhsjkhsjkdhjsbhjshdjscbhjdsbhdcjshbcjhbcdjsdbhjdshj</p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="item">
+              <h3>Name</h3>
+              <h4>Occupation</h4>
+              <div class="quote">
+                <p>dindjcksnjksnjkdcsjkdsjksbdchjckdbshjbhjkbhsjkhsjkdhjsbhjshdjscbhjdsbhdcjshbcjhbcdjsdbhjdshj</p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="item">
+              <h3>Name</h3>
+              <h4>Occupation</h4>
+              <div class="quote">
+                <p>dindjcksnjksnjkdcsjkdsjksbdchjckdbshjbhjkbhsjkhsjkdhjsbhjshdjscbhjdsbhdcjshbcjhbcdjsdbhjdshj</p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="item">
+              <h3>Name</h3>
+              <h4>Occupation</h4>
+              <div class="quote">
+                <p>dindjcksnjksnjkdcsjkdsjksbdchjckdbshjbhjkbhsjkhsjkdhjsbhjshdjscbhjdsbhdcjshbcjhbcdjsdbhjdshj</p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="item">
+              <h3>Name</h3>
+              <h4>Occupation</h4>
+              <div class="quote">
+                <p>dindjcksnjksnjkdcsjkdsjksbdchjckdbshjbhjkbhsjkhsjkdhjsbhjshdjscbhjdsbhdcjshbcjhbcdjsdbhjdshj</p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="item">
+              <h3>Name</h3>
+              <h4>Occupation</h4>
+              <div class="quote">
+                <p>dindjcksnjksnjkdcsjkdsjksbdchjckdbshjbhjkbhsjkhsjkdhjsbhjshdjscbhjdsbhdcjshbcjhbcdjsdbhjdshj</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
+    <div class="container-fluid blogs">
+      <h1 class="text-center blog__title">Rapid Axis <span>Blog</span></h1>
+      <div class="row">
+        {% for post in posts %}
+        <div class="col-lg-4 col-md-6 col-sm-12 post">
+          <img src="{{ post.image.url }}" alt="">
+          <div class="info">
+            <h3><a href="">{{ post.heading }}</a></h3>
+            <div class="author__time">
+              <span>BY ADMIN</span>
+              <span>|</span>
+              <span>
+                <time> {{ post.created_at }}</time>
+              </span> <br>
+              <a class="blog__content--btn primary__btn btn-outline-primary"
+                href="{% url 'blogDetails' blogs_id=post.id %}">Read more </a>
+            </div>
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+    <div class="textOnImage">
+      <div class="container">
+        <div class="text">
+          <h2>Have files ready to quote? Submit an RFQ now.</h2>
+          <a href="#" class="button">Let’s Get This Done</a>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="container-full">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-3 col-md-4 col-sm-12 footer__grp">
+          <h3 class="footer__title text-center mt-3">SERVICES</h3>
+          <ul class="services">
+            <li><a href="" class="footer__links">mine</a></li>
+            <li><a href="" class="footer__links">mine</a></li>
+            <li><a href="" class="footer__links">mine</a></li>
+            <li><a href="" class="footer__links">mine</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-12 footer__grp">
+          <h3 class="footer__title text-center mt-3">CONTENT</h3>
+          <ul class="services">
+            <li><a href="" class="footer__links">About Us</a></li>
+            <li><a href="" class="footer__links">Careers</a></li>
+            <li><a href="" class="footer__links">Contact Us</a></li>
+            <li><a href="" class="footer__links">Terms and Conditions</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-12 footer__grp">
+          <h3 class="footer__title text-center mt-3">CONTENT</h3>
+          <ul class="services">
+            <li><a href="" class="footer__links">moore</a></li>
+            <li><a href="" class="footer__links">moore</a></li>
+            <li><a href="" class="footer__links">moore</a></li>
+            <li><a href="" class="footer__links">moore</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-12 footer__grp">
+          <h3 class="footer__title text-center mt-3">CONTACT</h3>
+          <ul class="services">
+            <li><a href="" class="footer__links">yooh</a></li>
+            <li><a href="" class="footer__links">yooh</a></li>
+            <div class="SOCIAL">
+              <a href="" class="footer__title">FOLLOW US</a>
+              <div class="icons">
+                <a class="fab fa-facebook-f col" target="_blank"
+                  href="https://www.facebook.com/Rapid-Axis-594355157735531/" rel="nofollow"></a>
+                <a class="fab fa-linkedin-in col" target="_blank" href="https://www.linkedin.com/company/rapid-axis/"
+                  rel="nofollow"></a>
+                <a class="fab fa-instagram col" target="_blank" href="https://www.instagram.com/" rel="nofollow"></a>
+              </div>
+            </div>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+  </script>
+  <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+
+  <!-- Customscript js -->
+  <script src="{% static 'js/script.js' %}"></script>
 </body>
+
 </html>
