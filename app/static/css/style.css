@@ -116,6 +116,11 @@ span {
   display: none;
 }
 
+@media only screen and (max-width: 1306px) {
+  .nav-item {
+    margin-left: 2rem;
+  }
+}
 
 @media only screen and (max-width: 1033px) {
   .phoneHeader{
