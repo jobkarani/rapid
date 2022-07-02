@@ -29,19 +29,25 @@
   <main class="container-full">
     <header class="menu-header">
       <nav class="navbars">
-        <a href="#" class="nav-menu-logos">MENU</a>
+        <a href="{% url 'index' %}" class="nav-menu-logos">MENU</a>
         <ul class="nav-menus">
           <li class="nav-items">
-            <a href="#" class="nav-links">Services</a>
+            <a href="{% url 'index' %}" class="nav-links">Home</a>
           </li>
           <li class="nav-items">
-            <a href="#" class="nav-links">Blog</a>
+            <a href="{% url 'services' %}" class="nav-links">Services</a>
           </li>
           <li class="nav-items">
-            <a href="#" class="nav-links">About</a>
+            <a href="{% url 'careers' %}" class="nav-links">Careers</a>
           </li>
           <li class="nav-items">
-            <a href="#" class="nav-links">Contact</a>
+            <a href="{% url 'blogs' %}" class="nav-links">Blog</a>
+          </li>
+          <li class="nav-items">
+            <a href="{% url 'about' %}" class="nav-links">About</a>
+          </li>
+          <li class="nav-items">
+            <a href="{% url 'contact' %}" class="nav-links">Contact</a>
           </li>
         </ul>
         <div class="hamburger">
@@ -55,6 +61,7 @@
 
     <header class="header">
       <nav class="navbars">
+<<<<<<< HEAD
         <a href="#" class="nav-logos"><img src="https://sp-ao.shortpixel.ai/client/q_lossless,ret_img,w_152/https://rapidaxis.com/wp-content/uploads/Logo.png"></a>
         <ul class="nav-menu">
           <li class="nav-item">
@@ -68,6 +75,24 @@
           </li>
           <li class="nav-item">
             <a href="#" class="nav-link">Contact</a>
+=======
+        <a href="{% url 'index' %}" class="nav-logos"><img src="https://sp-ao.shortpixel.ai/client/q_lossless,ret_img,w_152/https://rapidaxis.com/wp-content/uploads/Logo.png"></a>
+        <ul class="nav-menu">
+          <li class="nav-item">
+            <a href="{% url 'services' %}" class="nav-link">Services</a>
+          </li>
+          <li class="nav-item">
+            <a href="{% url 'careers' %}" class="nav-link">Careers</a>
+          </li>
+          <li class="nav-item">
+            <a href="{% url 'blogs' %}" class="nav-link">Blog</a>
+          </li>
+          <li class="nav-item">
+            <a href="{% url 'about' %}" class="nav-link">About</a>
+          </li>
+          <li class="nav-item">
+            <a href="{% url 'contact' %}" class="nav-link">Contact</a>
+>>>>>>> aad808c26821c37c94670f4f5f3b60f81d30dfb1
           </li>
 
         </ul>

@@ -121,8 +121,14 @@ span {
   .phoneHeader{
     margin-left: 2rem;
   }
+  .header{
+    margin-top: 4rem;
+  }
   .menu-header{
     display: block;
+    position: fixed;
+    width: 100%;
+    z-index: 988;
   }
   .nav-menus {
     position: fixed;
@@ -135,6 +141,7 @@ span {
     text-align: center;
     transition: 0.3s;
     box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+    z-index: 899;
   }
   .nav-menu{
     display: none;
