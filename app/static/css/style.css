@@ -314,6 +314,12 @@ span {
     padding: 0 1rem;
   }
 }
+.spara{
+  padding: 0 8rem ;
+}
+.sbox{
+  justify-content: center;
+}
 .leftSection .text{
   margin-top: 3rem;
 }
