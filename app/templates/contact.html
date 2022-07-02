@@ -2,292 +2,205 @@
 
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- ======= All CSS Plugins here ======== -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
-      crossorigin="anonymous"
-    />
-    <!-- Plugin css -->
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- Custom Style CSS -->
-    <link rel="stylesheet" href="{% static 'css/style.css' %}" />
-    <!-- <link rel="stylesheet" href="{% static 'assets/css/main.css' %}"> -->
-    <link
-      rel="stylesheet"
-      href="{% static 'css/plugins/swiper-bundle.min.css' %}"
-    />
-    <link
-      rel="stylesheet"
-      href="{% static 'css/plugins/glightbox.min.css' %}"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
-      rel="stylesheet"
-    />
+  <!-- ======= All CSS Plugins here ======== -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+  <!-- Plugin css -->
 
-    <!-- Plugin css -->
-    <!-- <link rel="stylesheet" href="assets/css/vendor/bootstrap.min.css"> -->
+  <!-- Custom Style CSS -->
+  <link rel="stylesheet" href="{% static 'css/style.css' %}" />
+  <!-- <link rel="stylesheet" href="{% static 'assets/css/main.css' %}"> -->
+  <link rel="stylesheet" href="{% static 'css/plugins/swiper-bundle.min.css' %}" />
+  <link rel="stylesheet" href="{% static 'css/plugins/glightbox.min.css' %}" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+    rel="stylesheet" />
 
-    <!-- Custom Style CSS -->
-    <link rel="stylesheet" href="{% static 'css/main.css' %}" />
+  <!-- Plugin css -->
+  <!-- <link rel="stylesheet" href="assets/css/vendor/bootstrap.min.css"> -->
 
-    <title>Start Aerospace</title>
-  </head>
-  <body>
-    <main class="container-full">
-      <nav class="navbar navbar-expand-lg navbar-light navigation">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="{% url 'index' %}">
-            <img
-              width="152"
-              height="73"
-              src="https://sp-ao.shortpixel.ai/client/q_lossless,ret_img,w_152/https://rapidaxis.com/wp-content/uploads/Logo.png"
-              data-src="https://sp-ao.shortpixel.ai/client/q_lossless,ret_img,w_152/https://rapidaxis.com/wp-content/uploads/Logo.png"
-              class="custom-logo lazyloaded"
-              alt="Start Aerospace"
-              data-srcset="https://sp-ao.shortpixel.ai/client/q_lossless,ret_img,w_152/https://rapidaxis.com/wp-content/uploads/Logo.png 152w, https://sp-ao.shortpixel.ai/client/q_lossless,ret_img,w_150/https://rapidaxis.com/wp-content/uploads/Logo-150x73.png 150w"
-              data-sizes="(max-width: 152px) 100vw, 152px"
-              sizes="(max-width: 152px) 100vw, 152px"
-              srcset="
+  <!-- Custom Style CSS -->
+  <link rel="stylesheet" href="{% static 'css/main.css' %}" />
+
+  <title>Start Aerospace</title>
+</head>
+
+<body>
+  <main class="container-full">
+    <nav class="navbar navbar-expand-lg navbar-light navigation">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="{% url 'index' %}">
+          <img width="152" height="73"
+            src="https://sp-ao.shortpixel.ai/client/q_lossless,ret_img,w_152/https://rapidaxis.com/wp-content/uploads/Logo.png"
+            data-src="https://sp-ao.shortpixel.ai/client/q_lossless,ret_img,w_152/https://rapidaxis.com/wp-content/uploads/Logo.png"
+            class="custom-logo lazyloaded" alt="Start Aerospace"
+            data-srcset="https://sp-ao.shortpixel.ai/client/q_lossless,ret_img,w_152/https://rapidaxis.com/wp-content/uploads/Logo.png 152w, https://sp-ao.shortpixel.ai/client/q_lossless,ret_img,w_150/https://rapidaxis.com/wp-content/uploads/Logo-150x73.png 150w"
+            data-sizes="(max-width: 152px) 100vw, 152px" sizes="(max-width: 152px) 100vw, 152px" srcset="
                 https://sp-ao.shortpixel.ai/client/q_lossless,ret_img,w_152/https://rapidaxis.com/wp-content/uploads/Logo.png        152w,
                 https://sp-ao.shortpixel.ai/client/q_lossless,ret_img,w_150/https://rapidaxis.com/wp-content/uploads/Logo-150x73.png 150w
-              "
-            />
-          </a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNavDropdown"
-            aria-controls="navbarNavDropdown"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div
-            class="collapse navbar-collapse justify-content-end"
-            id="navbarNavDropdown"
-          >
-            <ul class="navbar-nav">
-              <li class="nav-item dropdown">
-                <a
-                  class="nav-link dropdown-toggle"
-                  href="{% url 'services' %}"
-                  id="navbarDropdownMenuLink"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  SERVICES
-                </a>
-                <ul
-                  class="dropdown-menu"
-                  aria-labelledby="navbarDropdownMenuLink"
-                >
-                  <li>
-                    <a class="dropdown-item" href="{% url 'about' %}"
-                      >ABOUT US</a
-                    >
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="{% url 'careers' %}"
-                      >CAREERS</a
-                    >
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="{% url 'blogs' %}">BLOG</a>
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="{% url 'contact' %}"
-                      >CONTACT US</a
-                    >
-                  </li>
-                </ul>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="{% url 'about' %}">ABOUT US</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="{% url 'careers' %}">CAREERS</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="{% url 'blogs' %}">BLOG</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="{% url 'contact' %}">CONTACT US</a>
-              </li>
-            </ul>
-          </div>
-          <div class="d-flex nav-cont">
-            <a href="#" class="phoneHeader">CALL:(650)587-1500</a>
-            <a href="{% url 'quote' %}" class="button transparent"
-              >GET A QUOTE</a
-            >
-          </div>
+              " />
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="{% url 'services' %}" id="navbarDropdownMenuLink" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                SERVICES
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <li>
+                  <a class="dropdown-item" href="{% url 'about' %}">ABOUT US</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="{% url 'careers' %}">CAREERS</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="{% url 'blogs' %}">BLOG</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="{% url 'contact' %}">CONTACT US</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{% url 'about' %}">ABOUT US</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{% url 'careers' %}">CAREERS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{% url 'blogs' %}">BLOG</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{% url 'contact' %}">CONTACT US</a>
+            </li>
+          </ul>
         </div>
-      </nav>
-      <div class="container-full">
-        <div class="contactUs flex">
-          <div class="contactInfo wrapText col-4 alc">
-            <h1>Contact Us</h1>
-            <div class="para">
-              <p>
-                <strong>Our Headquarters are currently located at:</strong> 1482
-                Oddstad Dr. Redwood City, CA 94063
-              </p>
-              <p><strong>Phone:</strong> (650) 587-1500</p>
-              <p>
-                <strong>For general questions email:</strong>
-                Sales@rapidaxis.com
-              </p>
-            </div>
-          </div>
-          <div class="col-4">
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.810497485688!2d36.825896314325774!3d-1.2878411990606975!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f11262da332f5%3A0xa7ea505f9c803a15!2sAfya%20Centre%2C%20Nairobi!5e0!3m2!1sen!2ske!4v1656699541521!5m2!1sen!2ske"
-              width="100%"
-              height="490"
-              style="border: 0"
-              allowfullscreen=""
-              style="position: relative; overflow: hidden"
-              loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade"
-            ></iframe>
-          </div>
-          <div class="col-4 contactForm alc">
-            <h3>Contact Us</h3>
-            <div class="para">
-              <form class="row g-3">
-                <div class="col-md-12">
-                  <input
-                    type="fname"
-                    class="form-control"
-                    id="inputEmail4"
-                    placeholder="First Name"
-                  />
-                </div>
-                <div class="col-md-12">
-                  <input
-                    type="lname"
-                    class="form-control"
-                    id="inputPassword4"
-                    placeholder="Last Name"
-                  />
-                </div>
-                <div class="col-12">
-                  <input
-                    type="text"
-                    class="form-control"
-                    id="inputAddress"
-                    placeholder="Company Name"
-                  />
-                </div>
-                <div class="col-12">
-                  <input
-                    type="email"
-                    class="form-control"
-                    id="inputAddress2"
-                    placeholder="Email"
-                  />
-                </div>
-                <div class="col-md-12">
-                  <input
-                    type="text"
-                    class="form-control"
-                    id="inputCity"
-                    placeholder="Phone"
-                  />
-                </div>
-
-                <div class="col-12">
-                  <button type="submit" class="btn btn-primary">Submit</button>
-                </div>
-              </form>
-            </div>
-          </div>
+        <div class="d-flex nav-cont">
+          <a href="#" class="phoneHeader">CALL:(650)587-1500</a>
+          <a href="{% url 'quote' %}" class="button transparent">GET A QUOTE</a>
         </div>
       </div>
-    </main>
-    <footer class="container-full">
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col-lg-3 col-md-4 col-sm-12 footer__grp">
-            <h3 class="footer__title text-center mt-3">SERVICES</h3>
-            <ul class="services">
-              <li><a href="" class="footer__links">mine</a></li>
-              <li><a href="" class="footer__links">mine</a></li>
-              <li><a href="" class="footer__links">mine</a></li>
-              <li><a href="" class="footer__links">mine</a></li>
-            </ul>
+    </nav>
+    <div class="container-full">
+      <div class="contactUs flex">
+        <div class="contactInfo wrapText col-4 alc">
+          <h1>Contact Us</h1>
+          <div class="para">
+            <p>
+              <strong>Our Headquarters are currently located at:</strong> 1482
+              Oddstad Dr. Redwood City, CA 94063
+            </p>
+            <p><strong>Phone:</strong> (650) 587-1500</p>
+            <p>
+              <strong>For general questions email:</strong>
+              Sales@rapidaxis.com
+            </p>
           </div>
-          <div class="col-lg-3 col-md-4 col-sm-12 footer__grp">
-            <h3 class="footer__title text-center mt-3">CONTENT</h3>
-            <ul class="services">
-              <li><a href="" class="footer__links">About Us</a></li>
-              <li><a href="" class="footer__links">Careers</a></li>
-              <li><a href="" class="footer__links">Contact Us</a></li>
-              <li><a href="" class="footer__links">Terms and Conditions</a></li>
-            </ul>
-          </div>
-          <div class="col-lg-3 col-md-4 col-sm-12 footer__grp">
-            <h3 class="footer__title text-center mt-3">CONTENT</h3>
-            <ul class="services">
-              <li><a href="" class="footer__links">moore</a></li>
-              <li><a href="" class="footer__links">moore</a></li>
-              <li><a href="" class="footer__links">moore</a></li>
-              <li><a href="" class="footer__links">moore</a></li>
-            </ul>
-          </div>
-          <div class="col-lg-3 col-md-4 col-sm-12 footer__grp">
-            <h3 class="footer__title text-center mt-3">CONTACT</h3>
-            <ul class="services">
-              <li><a href="" class="footer__links">yooh</a></li>
-              <li><a href="" class="footer__links">yooh</a></li>
-              <div class="SOCIAL">
-                <a href="" class="footer__title">FOLLOW US</a>
-                <div class="icons">
-                  <a
-                    class="fab fa-facebook-f col"
-                    target="_blank"
-                    href="https://www.facebook.com/Rapid-Axis-594355157735531/"
-                    rel="nofollow"
-                  ></a>
-                  <a
-                    class="fab fa-linkedin-in col"
-                    target="_blank"
-                    href="https://www.linkedin.com/company/rapid-axis/"
-                    rel="nofollow"
-                  ></a>
-                  <a
-                    class="fab fa-instagram col"
-                    target="_blank"
-                    href="https://www.instagram.com/"
-                    rel="nofollow"
-                  ></a>
-                </div>
+        </div>
+        <div class="col-4">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.810497485688!2d36.825896314325774!3d-1.2878411990606975!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f11262da332f5%3A0xa7ea505f9c803a15!2sAfya%20Centre%2C%20Nairobi!5e0!3m2!1sen!2ske!4v1656699541521!5m2!1sen!2ske"
+            width="100%" height="490" style="border: 0" allowfullscreen="" style="position: relative; overflow: hidden"
+            loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div class="col-4 contactForm alc">
+          <h3 class="text-center" style="color: #007bff; font-weight: 700;">Contact Us</h3>
+          <div class="para">
+            <form class="row g-3">
+              <div class="col-md-12">
+                <input type="fname" class="form-control" id="inputEmail4" placeholder="First Name" />
               </div>
-            </ul>
+              <div class="col-md-12">
+                <input type="lname" class="form-control" id="inputPassword4" placeholder="Last Name" />
+              </div>
+              <div class="col-12">
+                <input type="text" class="form-control" id="inputAddress" placeholder="Company Name" />
+              </div>
+              <div class="col-12">
+                <input type="email" class="form-control" id="inputAddress2" placeholder="Email" />
+              </div>
+              <div class="col-md-12">
+                <input type="text" class="form-control" id="inputCity" placeholder="Phone" />
+              </div>
+
+              <div class="col-12">
+                <button type="submit" class="btn btn-primary text-center">Submit</button>
+              </div>
+            </form>
           </div>
         </div>
       </div>
-    </footer>
+    </div>
+  </main>
+  <footer class="container-full">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-3 col-md-4 col-sm-12 footer__grp">
+          <h3 class="footer__title text-center mt-3">SERVICES</h3>
+          <ul class="services">
+            <li><a href="" class="footer__links">mine</a></li>
+            <li><a href="" class="footer__links">mine</a></li>
+            <li><a href="" class="footer__links">mine</a></li>
+            <li><a href="" class="footer__links">mine</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-12 footer__grp">
+          <h3 class="footer__title text-center mt-3">CONTENT</h3>
+          <ul class="services">
+            <li><a href="" class="footer__links">About Us</a></li>
+            <li><a href="" class="footer__links">Careers</a></li>
+            <li><a href="" class="footer__links">Contact Us</a></li>
+            <li><a href="" class="footer__links">Terms and Conditions</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-12 footer__grp">
+          <h3 class="footer__title text-center mt-3">CONTENT</h3>
+          <ul class="services">
+            <li><a href="" class="footer__links">moore</a></li>
+            <li><a href="" class="footer__links">moore</a></li>
+            <li><a href="" class="footer__links">moore</a></li>
+            <li><a href="" class="footer__links">moore</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-12 footer__grp">
+          <h3 class="footer__title text-center mt-3">CONTACT</h3>
+          <ul class="services">
+            <li><a href="" class="footer__links">yooh</a></li>
+            <li><a href="" class="footer__links">yooh</a></li>
+            <div class="SOCIAL">
+              <a href="" class="footer__title">FOLLOW US</a>
+              <div class="icons">
+                <a class="fab fa-facebook-f col" target="_blank"
+                  href="https://www.facebook.com/Rapid-Axis-594355157735531/" rel="nofollow"></a>
+                <a class="fab fa-linkedin-in col" target="_blank" href="https://www.linkedin.com/company/rapid-axis/"
+                  rel="nofollow"></a>
+                <a class="fab fa-instagram col" target="_blank" href="https://www.instagram.com/" rel="nofollow"></a>
+              </div>
+            </div>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
 
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-      crossorigin="anonymous"
-    ></script>
-    <script src="{% static 'js/plugins/swiper-bundle.min.js' %}"></script>
-    <script src="{% static 'js/plugins/glightbox.min.js' %}"></script>
-    <!-- Customscript js -->
-    <script src="{% static 'js/script.js' %}"></script>
-  </body>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+  </script>
+  <script src="{% static 'js/plugins/swiper-bundle.min.js' %}"></script>
+  <script src="{% static 'js/plugins/glightbox.min.js' %}"></script>
+  <!-- Customscript js -->
+  <script src="{% static 'js/script.js' %}"></script>
+</body>
+
 </html>

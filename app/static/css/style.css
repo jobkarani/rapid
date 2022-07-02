@@ -385,6 +385,23 @@ footer .row{
 .contactForm{
   padding: 0 3rem;
 }
+.para p{
+  font-size: 19px;
+  font-weight: 300;
+  padding-bottom: 20px;
+  line-height: 1.5;
+}
+
+@media screen and (max-width: 1366px){
+  .contactUs {
+    display: block;
+}
+.contactForm{
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+}
+
 
 /* end contact us */
 
